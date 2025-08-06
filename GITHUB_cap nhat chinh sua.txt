@@ -1,0 +1,53 @@
+A. Tạo branch mới từ code hiện tại
+    Ví dụ mày đang ở branch "main":
+
+    bash:
+        git checkout -b ten-nhanh-moi
+            Ví dụ:
+                git checkout -b test-invoice
+                Tên gì cũng được, miễn KHÔNG có dấu cách (dùng dấu - hoặc /)
+
+B. Code trên branch mới:
+    Chạy lần đầu sau khi mới tạo nhánh mới, ví dụ nhánh mới tên "test-invoice":
+
+    bash:
+        git add .
+        git commit -m "add nút in" < cái này cho biết dang làm gì
+        git push -u origin "test-invoice"
+
+    Sửa code, thêm/xóa chức năng… thoải mái, sau chỉ cần:
+
+    bash:
+        git add .
+        git commit -m "add-more-info"   #chỗ này thì ghi nội dung gì cũng được (nên ghi rõ nội dung chỉnh sửa)
+        git push
+
+C. Lúc muốn nhập (merge) vào branch chính
+    Khi nhánh mới đã ổn, lên GitHub sẽ thấy nút “Compare & pull request” (cạnh branch)
+    Nhấn vào để merge về main (review trước khi nhập, lỡ có bug còn sửa)
+
+D. Chuyển qua lại giữa các nhánh
+    Về lại main:
+
+    bash:
+        git checkout main
+
+    Sang lại branch khác:
+
+    bash:
+        git checkout feature/add-category
+
+E. Xem danh sách nhánh local và remote
+    
+    bash:
+        git branch        # Xem nhánh local
+        git branch -r     # Xem nhánh remote
+    
+F. Xoá nhánh local nếu muốn (sau khi merge):
+   
+    bash:
+        git branch -d feature/add-category
+
+Tóm lại:
+Tạo branch để lưu từng giai đoạn phát triển/feature/test, cực kỳ dễ quản lý, rollback.
+Làm nhóm thì mỗi người một branch, khi xong nhập lại main, không lo đụng code nhau.

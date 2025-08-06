@@ -1,0 +1,15 @@
+Đổi tên branch local
+bash
+git branch -m ten-cu ten-moi
+
+Hoặc nếu đang đứng trên branch đó, chỉ cần:
+bash
+git branch -m ten-moi
+
+Xóa branch cũ trên remote (trên GitHub)
+bash
+git push origin --delete ten-cu
+
+Push branch mới lên remote & set upstream
+bash
+git push -u origin ten-moi

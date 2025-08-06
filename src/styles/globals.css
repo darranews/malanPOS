@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@media print {
+  body * {
+    visibility: hidden !important;
+  }
+  .print\:bg-transparent,
+  .print\:bg-transparent * {
+    background: transparent !important;
+  }
+  .print\:block, .print\:block * {
+    display: block !important;
+    visibility: visible !important;
+  }
+  .print\:hidden, .print\:hidden * {
+    display: none !important;
+  }
+  .print\:w-full {
+    width: 100% !important;
+  }
+}
