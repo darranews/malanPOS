@@ -1,0 +1,845 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Latte #1",
+      "price": 3.39,
+      "category": "coffee",
+      "image": "/images/products/coffee.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Espresso #2",
+      "price": 3.38,
+      "category": "coffee",
+      "image": "/images/products/coffee.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Latte #3",
+      "price": 3.74,
+      "category": "coffee",
+      "image": "/images/products/coffee.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Latte #4",
+      "price": 5.77,
+      "category": "coffee",
+      "image": "/images/products/coffee.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Piccolo #5",
+      "price": 3.07,
+      "category": "coffee",
+      "image": "/images/products/coffee.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Iced Latte #6",
+      "price": 6.67,
+      "category": "coffee",
+      "image": "/images/products/coffee.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Piccolo #7",
+      "price": 7.28,
+      "category": "coffee",
+      "image": "/images/products/coffee.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Iced Latte #8",
+      "price": 3.77,
+      "category": "coffee",
+      "image": "/images/products/coffee.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Iced Latte #9",
+      "price": 6.69,
+      "category": "coffee",
+      "image": "/images/products/coffee.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Iced Latte #10",
+      "price": 7.41,
+      "category": "coffee",
+      "image": "/images/products/coffee.jpg"
+    },
+    {
+      "id": 11,
+      "name": "Piccolo #11",
+      "price": 5.21,
+      "category": "coffee",
+      "image": "/images/products/coffee.jpg"
+    },
+    {
+      "id": 12,
+      "name": "Iced Latte #12",
+      "price": 7.13,
+      "category": "coffee",
+      "image": "/images/products/coffee.jpg"
+    },
+    {
+      "id": 13,
+      "name": "Espresso #13",
+      "price": 4.49,
+      "category": "coffee",
+      "image": "/images/products/coffee.jpg"
+    },
+    {
+      "id": 14,
+      "name": "Affogato #14",
+      "price": 3.85,
+      "category": "coffee",
+      "image": "/images/products/coffee.jpg"
+    },
+    {
+      "id": 15,
+      "name": "Iced Latte #15",
+      "price": 6.03,
+      "category": "coffee",
+      "image": "/images/products/coffee.jpg"
+    },
+    {
+      "id": 16,
+      "name": "Iced Latte #16",
+      "price": 4.85,
+      "category": "coffee",
+      "image": "/images/products/coffee.jpg"
+    },
+    {
+      "id": 17,
+      "name": "Cold Brew #17",
+      "price": 7.31,
+      "category": "coffee",
+      "image": "/images/products/coffee.jpg"
+    },
+    {
+      "id": 18,
+      "name": "Long Black #18",
+      "price": 5.63,
+      "category": "coffee",
+      "image": "/images/products/coffee.jpg"
+    },
+    {
+      "id": 19,
+      "name": "Cappuccino #19",
+      "price": 6.12,
+      "category": "coffee",
+      "image": "/images/products/coffee.jpg"
+    },
+    {
+      "id": 20,
+      "name": "Long Black #20",
+      "price": 7.56,
+      "category": "coffee",
+      "image": "/images/products/coffee.jpg"
+    },
+    {
+      "id": 21,
+      "name": "Affogato #21",
+      "price": 7.13,
+      "category": "coffee",
+      "image": "/images/products/coffee.jpg"
+    },
+    {
+      "id": 22,
+      "name": "Flat White #22",
+      "price": 6.66,
+      "category": "coffee",
+      "image": "/images/products/coffee.jpg"
+    },
+    {
+      "id": 23,
+      "name": "Piccolo #23",
+      "price": 3.14,
+      "category": "coffee",
+      "image": "/images/products/coffee.jpg"
+    },
+    {
+      "id": 24,
+      "name": "Piccolo #24",
+      "price": 3.77,
+      "category": "coffee",
+      "image": "/images/products/coffee.jpg"
+    },
+    {
+      "id": 25,
+      "name": "Cappuccino #25",
+      "price": 4.04,
+      "category": "coffee",
+      "image": "/images/products/coffee.jpg"
+    },
+    {
+      "id": 26,
+      "name": "Affogato #26",
+      "price": 6.88,
+      "category": "coffee",
+      "image": "/images/products/coffee.jpg"
+    },
+    {
+      "id": 27,
+      "name": "Affogato #27",
+      "price": 4.75,
+      "category": "coffee",
+      "image": "/images/products/coffee.jpg"
+    },
+    {
+      "id": 28,
+      "name": "Mocha #28",
+      "price": 6.97,
+      "category": "coffee",
+      "image": "/images/products/coffee.jpg"
+    },
+    {
+      "id": 29,
+      "name": "Iced Latte #29",
+      "price": 3.93,
+      "category": "coffee",
+      "image": "/images/products/coffee.jpg"
+    },
+    {
+      "id": 30,
+      "name": "Latte #30",
+      "price": 3.86,
+      "category": "coffee",
+      "image": "/images/products/coffee.jpg"
+    },
+    {
+      "id": 31,
+      "name": "Oolong Tea #1",
+      "price": 5.35,
+      "category": "tea",
+      "image": "/images/products/tea.jpg"
+    },
+    {
+      "id": 32,
+      "name": "Peppermint Tea #2",
+      "price": 6.65,
+      "category": "tea",
+      "image": "/images/products/tea.jpg"
+    },
+    {
+      "id": 33,
+      "name": "Earl Grey #3",
+      "price": 3.02,
+      "category": "tea",
+      "image": "/images/products/tea.jpg"
+    },
+    {
+      "id": 34,
+      "name": "Earl Grey #4",
+      "price": 4.16,
+      "category": "tea",
+      "image": "/images/products/tea.jpg"
+    },
+    {
+      "id": 35,
+      "name": "Oolong Tea #5",
+      "price": 6.92,
+      "category": "tea",
+      "image": "/images/products/tea.jpg"
+    },
+    {
+      "id": 36,
+      "name": "Peppermint Tea #6",
+      "price": 4.38,
+      "category": "tea",
+      "image": "/images/products/tea.jpg"
+    },
+    {
+      "id": 37,
+      "name": "Peppermint Tea #7",
+      "price": 4.17,
+      "category": "tea",
+      "image": "/images/products/tea.jpg"
+    },
+    {
+      "id": 38,
+      "name": "Lemon Tea #8",
+      "price": 5.7,
+      "category": "tea",
+      "image": "/images/products/tea.jpg"
+    },
+    {
+      "id": 39,
+      "name": "Oolong Tea #9",
+      "price": 6.37,
+      "category": "tea",
+      "image": "/images/products/tea.jpg"
+    },
+    {
+      "id": 40,
+      "name": "Peppermint Tea #10",
+      "price": 4.75,
+      "category": "tea",
+      "image": "/images/products/tea.jpg"
+    },
+    {
+      "id": 41,
+      "name": "Lemon Tea #11",
+      "price": 4.4,
+      "category": "tea",
+      "image": "/images/products/tea.jpg"
+    },
+    {
+      "id": 42,
+      "name": "Jasmine Tea #12",
+      "price": 6.0,
+      "category": "tea",
+      "image": "/images/products/tea.jpg"
+    },
+    {
+      "id": 43,
+      "name": "Chai Latte #13",
+      "price": 7.53,
+      "category": "tea",
+      "image": "/images/products/tea.jpg"
+    },
+    {
+      "id": 44,
+      "name": "English Breakfast #14",
+      "price": 3.15,
+      "category": "tea",
+      "image": "/images/products/tea.jpg"
+    },
+    {
+      "id": 45,
+      "name": "Jasmine Tea #15",
+      "price": 6.19,
+      "category": "tea",
+      "image": "/images/products/tea.jpg"
+    },
+    {
+      "id": 46,
+      "name": "Oolong Tea #16",
+      "price": 6.27,
+      "category": "tea",
+      "image": "/images/products/tea.jpg"
+    },
+    {
+      "id": 47,
+      "name": "Chamomile #17",
+      "price": 5.41,
+      "category": "tea",
+      "image": "/images/products/tea.jpg"
+    },
+    {
+      "id": 48,
+      "name": "Chai Latte #18",
+      "price": 4.22,
+      "category": "tea",
+      "image": "/images/products/tea.jpg"
+    },
+    {
+      "id": 49,
+      "name": "Peppermint Tea #19",
+      "price": 4.7,
+      "category": "tea",
+      "image": "/images/products/tea.jpg"
+    },
+    {
+      "id": 50,
+      "name": "Peppermint Tea #20",
+      "price": 4.97,
+      "category": "tea",
+      "image": "/images/products/tea.jpg"
+    },
+    {
+      "id": 51,
+      "name": "Oolong Tea #21",
+      "price": 4.82,
+      "category": "tea",
+      "image": "/images/products/tea.jpg"
+    },
+    {
+      "id": 52,
+      "name": "Chai Latte #22",
+      "price": 5.5,
+      "category": "tea",
+      "image": "/images/products/tea.jpg"
+    },
+    {
+      "id": 53,
+      "name": "Earl Grey #23",
+      "price": 7.36,
+      "category": "tea",
+      "image": "/images/products/tea.jpg"
+    },
+    {
+      "id": 54,
+      "name": "Green Tea #24",
+      "price": 7.43,
+      "category": "tea",
+      "image": "/images/products/tea.jpg"
+    },
+    {
+      "id": 55,
+      "name": "Green Tea #25",
+      "price": 3.17,
+      "category": "tea",
+      "image": "/images/products/tea.jpg"
+    },
+    {
+      "id": 56,
+      "name": "Green Tea #26",
+      "price": 3.21,
+      "category": "tea",
+      "image": "/images/products/tea.jpg"
+    },
+    {
+      "id": 57,
+      "name": "Green Tea #27",
+      "price": 6.96,
+      "category": "tea",
+      "image": "/images/products/tea.jpg"
+    },
+    {
+      "id": 58,
+      "name": "Chai Latte #28",
+      "price": 7.27,
+      "category": "tea",
+      "image": "/images/products/tea.jpg"
+    },
+    {
+      "id": 59,
+      "name": "Peppermint Tea #29",
+      "price": 5.7,
+      "category": "tea",
+      "image": "/images/products/tea.jpg"
+    },
+    {
+      "id": 60,
+      "name": "Lemon Tea #30",
+      "price": 7.49,
+      "category": "tea",
+      "image": "/images/products/tea.jpg"
+    },
+    {
+      "id": 61,
+      "name": "Red Velvet #1",
+      "price": 6.24,
+      "category": "cake",
+      "image": "/images/products/cake.jpg"
+    },
+    {
+      "id": 62,
+      "name": "Banoffee Pie #2",
+      "price": 5.52,
+      "category": "cake",
+      "image": "/images/products/cake.jpg"
+    },
+    {
+      "id": 63,
+      "name": "Brownie #3",
+      "price": 3.71,
+      "category": "cake",
+      "image": "/images/products/cake.jpg"
+    },
+    {
+      "id": 64,
+      "name": "Cheesecake #4",
+      "price": 5.17,
+      "category": "cake",
+      "image": "/images/products/cake.jpg"
+    },
+    {
+      "id": 65,
+      "name": "Chocolate Cake #5",
+      "price": 6.69,
+      "category": "cake",
+      "image": "/images/products/cake.jpg"
+    },
+    {
+      "id": 66,
+      "name": "Black Forest #6",
+      "price": 7.14,
+      "category": "cake",
+      "image": "/images/products/cake.jpg"
+    },
+    {
+      "id": 67,
+      "name": "Banoffee Pie #7",
+      "price": 5.1,
+      "category": "cake",
+      "image": "/images/products/cake.jpg"
+    },
+    {
+      "id": 68,
+      "name": "Brownie #8",
+      "price": 3.33,
+      "category": "cake",
+      "image": "/images/products/cake.jpg"
+    },
+    {
+      "id": 69,
+      "name": "Lemon Tart #9",
+      "price": 6.52,
+      "category": "cake",
+      "image": "/images/products/cake.jpg"
+    },
+    {
+      "id": 70,
+      "name": "Brownie #10",
+      "price": 6.19,
+      "category": "cake",
+      "image": "/images/products/cake.jpg"
+    },
+    {
+      "id": 71,
+      "name": "Banoffee Pie #11",
+      "price": 4.67,
+      "category": "cake",
+      "image": "/images/products/cake.jpg"
+    },
+    {
+      "id": 72,
+      "name": "Brownie #12",
+      "price": 7.56,
+      "category": "cake",
+      "image": "/images/products/cake.jpg"
+    },
+    {
+      "id": 73,
+      "name": "Lemon Tart #13",
+      "price": 5.39,
+      "category": "cake",
+      "image": "/images/products/cake.jpg"
+    },
+    {
+      "id": 74,
+      "name": "Brownie #14",
+      "price": 5.97,
+      "category": "cake",
+      "image": "/images/products/cake.jpg"
+    },
+    {
+      "id": 75,
+      "name": "Cheesecake #15",
+      "price": 5.78,
+      "category": "cake",
+      "image": "/images/products/cake.jpg"
+    },
+    {
+      "id": 76,
+      "name": "Carrot Cake #16",
+      "price": 5.17,
+      "category": "cake",
+      "image": "/images/products/cake.jpg"
+    },
+    {
+      "id": 77,
+      "name": "Brownie #17",
+      "price": 3.56,
+      "category": "cake",
+      "image": "/images/products/cake.jpg"
+    },
+    {
+      "id": 78,
+      "name": "Chocolate Cake #18",
+      "price": 5.43,
+      "category": "cake",
+      "image": "/images/products/cake.jpg"
+    },
+    {
+      "id": 79,
+      "name": "Apple Pie #19",
+      "price": 7.51,
+      "category": "cake",
+      "image": "/images/products/cake.jpg"
+    },
+    {
+      "id": 80,
+      "name": "Tiramisu #20",
+      "price": 4.59,
+      "category": "cake",
+      "image": "/images/products/cake.jpg"
+    },
+    {
+      "id": 81,
+      "name": "Lemon Tart #21",
+      "price": 4.09,
+      "category": "cake",
+      "image": "/images/products/cake.jpg"
+    },
+    {
+      "id": 82,
+      "name": "Cheesecake #22",
+      "price": 4.34,
+      "category": "cake",
+      "image": "/images/products/cake.jpg"
+    },
+    {
+      "id": 83,
+      "name": "Red Velvet #23",
+      "price": 7.27,
+      "category": "cake",
+      "image": "/images/products/cake.jpg"
+    },
+    {
+      "id": 84,
+      "name": "Red Velvet #24",
+      "price": 4.34,
+      "category": "cake",
+      "image": "/images/products/cake.jpg"
+    },
+    {
+      "id": 85,
+      "name": "Cheesecake #25",
+      "price": 5.43,
+      "category": "cake",
+      "image": "/images/products/cake.jpg"
+    },
+    {
+      "id": 86,
+      "name": "Chocolate Cake #26",
+      "price": 4.1,
+      "category": "cake",
+      "image": "/images/products/cake.jpg"
+    },
+    {
+      "id": 87,
+      "name": "Tiramisu #27",
+      "price": 6.61,
+      "category": "cake",
+      "image": "/images/products/cake.jpg"
+    },
+    {
+      "id": 88,
+      "name": "Cheesecake #28",
+      "price": 7.41,
+      "category": "cake",
+      "image": "/images/products/cake.jpg"
+    },
+    {
+      "id": 89,
+      "name": "Red Velvet #29",
+      "price": 6.45,
+      "category": "cake",
+      "image": "/images/products/cake.jpg"
+    },
+    {
+      "id": 90,
+      "name": "Red Velvet #30",
+      "price": 3.92,
+      "category": "cake",
+      "image": "/images/products/cake.jpg"
+    },
+    {
+      "id": 91,
+      "name": "Milkshake #1",
+      "price": 6.11,
+      "category": "other",
+      "image": "/images/products/other.jpg"
+    },
+    {
+      "id": 92,
+      "name": "Water Bottle #2",
+      "price": 5.84,
+      "category": "other",
+      "image": "/images/products/other.jpg"
+    },
+    {
+      "id": 93,
+      "name": "Muffin #3",
+      "price": 5.92,
+      "category": "other",
+      "image": "/images/products/other.jpg"
+    },
+    {
+      "id": 94,
+      "name": "Croissant #4",
+      "price": 4.91,
+      "category": "other",
+      "image": "/images/products/other.jpg"
+    },
+    {
+      "id": 95,
+      "name": "Hot Chocolate #5",
+      "price": 4.28,
+      "category": "other",
+      "image": "/images/products/other.jpg"
+    },
+    {
+      "id": 96,
+      "name": "Croissant #6",
+      "price": 3.04,
+      "category": "other",
+      "image": "/images/products/other.jpg"
+    },
+    {
+      "id": 97,
+      "name": "Muffin #7",
+      "price": 6.7,
+      "category": "other",
+      "image": "/images/products/other.jpg"
+    },
+    {
+      "id": 98,
+      "name": "Sandwich #8",
+      "price": 6.02,
+      "category": "other",
+      "image": "/images/products/other.jpg"
+    },
+    {
+      "id": 99,
+      "name": "Bagel #9",
+      "price": 5.67,
+      "category": "other",
+      "image": "/images/products/other.jpg"
+    },
+    {
+      "id": 100,
+      "name": "Bagel #10",
+      "price": 6.3,
+      "category": "other",
+      "image": "/images/products/other.jpg"
+    },
+    {
+      "id": 101,
+      "name": "Salad #11",
+      "price": 5.78,
+      "category": "other",
+      "image": "/images/products/other.jpg"
+    },
+    {
+      "id": 102,
+      "name": "Croissant #12",
+      "price": 4.37,
+      "category": "other",
+      "image": "/images/products/other.jpg"
+    },
+    {
+      "id": 103,
+      "name": "Water Bottle #13",
+      "price": 3.87,
+      "category": "other",
+      "image": "/images/products/other.jpg"
+    },
+    {
+      "id": 104,
+      "name": "Sandwich #14",
+      "price": 4.41,
+      "category": "other",
+      "image": "/images/products/other.jpg"
+    },
+    {
+      "id": 105,
+      "name": "Milkshake #15",
+      "price": 5.71,
+      "category": "other",
+      "image": "/images/products/other.jpg"
+    },
+    {
+      "id": 106,
+      "name": "Sandwich #16",
+      "price": 6.16,
+      "category": "other",
+      "image": "/images/products/other.jpg"
+    },
+    {
+      "id": 107,
+      "name": "Bagel #17",
+      "price": 5.04,
+      "category": "other",
+      "image": "/images/products/other.jpg"
+    },
+    {
+      "id": 108,
+      "name": "Hot Chocolate #18",
+      "price": 3.29,
+      "category": "other",
+      "image": "/images/products/other.jpg"
+    },
+    {
+      "id": 109,
+      "name": "Water Bottle #19",
+      "price": 6.47,
+      "category": "other",
+      "image": "/images/products/other.jpg"
+    },
+    {
+      "id": 110,
+      "name": "Milkshake #20",
+      "price": 4.9,
+      "category": "other",
+      "image": "/images/products/other.jpg"
+    },
+    {
+      "id": 111,
+      "name": "Muffin #21",
+      "price": 7.81,
+      "category": "other",
+      "image": "/images/products/other.jpg"
+    },
+    {
+      "id": 112,
+      "name": "Salad #22",
+      "price": 3.52,
+      "category": "other",
+      "image": "/images/products/other.jpg"
+    },
+    {
+      "id": 113,
+      "name": "Hot Chocolate #23",
+      "price": 6.29,
+      "category": "other",
+      "image": "/images/products/other.jpg"
+    },
+    {
+      "id": 114,
+      "name": "Bagel #24",
+      "price": 3.83,
+      "category": "other",
+      "image": "/images/products/other.jpg"
+    },
+    {
+      "id": 115,
+      "name": "Orange Juice #25",
+      "price": 6.57,
+      "category": "other",
+      "image": "/images/products/other.jpg"
+    },
+    {
+      "id": 116,
+      "name": "Muffin #26",
+      "price": 3.96,
+      "category": "other",
+      "image": "/images/products/other.jpg"
+    },
+    {
+      "id": 117,
+      "name": "Muffin #27",
+      "price": 4.69,
+      "category": "other",
+      "image": "/images/products/other.jpg"
+    },
+    {
+      "id": 118,
+      "name": "Muffin #28",
+      "price": 7.48,
+      "category": "other",
+      "image": "/images/products/other.jpg"
+    },
+    {
+      "id": 119,
+      "name": "Smoothie #29",
+      "price": 6.07,
+      "category": "other",
+      "image": "/images/products/other.jpg"
+    },
+    {
+      "id": 120,
+      "name": "Milkshake #30",
+      "price": 5.81,
+      "category": "other",
+      "image": "/images/products/other.jpg"
+    }
+  ],
+  "orders": []
+}
