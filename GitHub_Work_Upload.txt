@@ -48,7 +48,9 @@ CÁC BƯỚC ĐỂ TẠO GITHUB VÀ UPLOAD PROJECT LÊN GITHUB
 ✅ Kết nối repo cục bộ với repo trên GitHub:
 		git remote add origin https://github.com/tên-tài-khoản/tên-repo.git
 				#Ví dụ: git remote add origin https://github.com/darranews/malanPOS.git
+		
 		Nếu repo đã có sẵn, thì sẽ báo lỗi, lúc này cần xóa remote cũ:
+				
 				git remote remove origin
 		Sau đó làm lại lệnh trên để kết nối lại
 
@@ -56,15 +58,19 @@ CÁC BƯỚC ĐỂ TẠO GITHUB VÀ UPLOAD PROJECT LÊN GITHUB
 		git branch -M main
 				#Nếu đã có branch main, thì sẽ báo lỗi, lúc này cần xóa branch cũ:
 						git branch -D main
-				Sau đó làm lại lệnh trên để đặt tên branch chính
+								Sau đó làm lại lệnh trên để đặt tên branch chính
 				#Lưu ý: Tên branch chính trên GitHub là "main", không phải "master" như trước đây
+				
 				#Nếu muốn đặt tên khác, thì làm lệnh sau:
-				git branch -M ten-branch-chinh		#Ví dụ: git branch -M master
+						git branch -M ten-branch-chinh		#Ví dụ: git branch -M master
+
 ✅ Đẩy code lên GitHub:
 		git push -u origin main
+				
 				#Nếu đã có branch main trên GitHub, thì sẽ báo lỗi, lúc này cần xóa branch cũ:
 						git push origin --delete main
 						Sau đó làm lại lệnh trên để đẩy code lên GitHub
+				
 				#Nếu muốn đẩy lên branch khác, thì làm lệnh sau:
 						git push -u origin ten-branch-chinh		#Ví dụ: git push -u origin master
 
@@ -87,7 +93,7 @@ CÁC LỆNH QUẢN LÝ BRANCH TRÊN GITHUB
 		git branch -a
 
 ✅ Tạo branch (nhánh) mới:
-		git checkout -b ten-nhanh-moi		#không được có dấu cách
+		git checkout -b ten-branch-moi		#không được có dấu cách
 				#Ví dụ: git checkout -b new-feature
 				#Lưu ý: Tên branch không được có dấu cách, nếu có thì cần thay thế bằng dấu gạch ngang (-) hoặc dấu gạch dưới (_)
 
@@ -100,7 +106,6 @@ CÁC LỆNH QUẢN LÝ BRANCH TRÊN GITHUB
 				
 				#Nếu muốn chuyển sang branch khác mà chưa commit, thì cần dùng lệnh:
 						git checkout -b ten-branch		#Tạo branch mới và chuyển sang branch đó
-
 
 ✅ Đổi tên branch local:
 		git branch -m ten-cu ten-moi
@@ -116,6 +121,7 @@ CÁC LỆNH QUẢN LÝ BRANCH TRÊN GITHUB
 ✅ Push branch mới lên remote & set upstream:
 		git push -u origin ten-moi
 				#Lưu ý: Chỉ cần làm lệnh này 1 lần khi tạo branch mới, sau đó chỉ cần dùng lệnh git push để đẩy code lên branch đó
+				
 				#Nếu đã có branch ten-moi trên GitHub, thì sẽ báo lỗi, lúc này cần xóa branch cũ:
 						git push origin --delete ten-moi
 				Sau đó làm lại lệnh trên để đẩy code lên GitHub
@@ -125,25 +131,43 @@ CÁC LỆNH QUẢN LÝ BRANCH TRÊN GITHUB
 				git commit -m "đang làm gì"		#Tạo 1 bản lưu với ghi chú là"đang làm gì" ví dụ:  git commit -m "đang chỉnh giao diện bán hàng"
 				git push -u origin "tên-branch-đang-làm-việc"		#Đẩy commit lên GitHub vào nhánh ""tên-branch-đang-làm-việc", tên này không có dấu cách
 
----------------------------------------------------------------------------
+		*****************************************************************
 		CHỈNH SỬA, CẬP NHẬT CODE TRÊN BRANCH MỚI:
 
 				#Nếu tiếp tục làm việc trên nhánh này, sau chỉ cần:		
 						git add .
 						git commit -m "mô tả ngắn"   #chỗ này thì ghi nội dung gì cũng được (nên ghi rõ nội dung chỉnh sửa)
 						git push
----------------------------------------------------------------------------	
+		*****************************************************************
 
 ✅ Nhập (merge) vào branch chính:
 		git checkout main		#Chuyển về branch chính
 		git merge ten-branch		#Nhập branch ten-branch vào branch chính
+				
 				#Nếu có xung đột, sẽ hiện thông báo, cần sửa xung đột rồi commit lại
 				git push		#Đẩy code lên GitHub
 
 ✅ Xóa branch local:
 		git branch -d ten-branch		#Xóa branch local sau khi đã nhập vào branch chính
+				
 				#Nếu muốn xóa branch local mà không cần merge, thì dùng lệnh:
 						git branch -D ten-branch		#Lưu ý: sẽ mất toàn bộ code trên branch này
 
+		*****************************************************************
+		✅ NẾU TRỰC TIẾP XOÁ BRANCH, TẠO BRANCH TRÊN TRÌNH DUYỆT VÀ MUỐN ĐỒNG BỘ LẠI VỚI TRÊN MÁY TÍNH:
+				git fetch origin		#Lấy về các thay đổi từ remote
+				git checkout -b ten-branch origin/ten-branch		#Tạo branch mới từ remote và chuyển sang branch đó
+						#Ví dụ: git checkout -b new-feature origin/new-feature
+						#Lưu ý: Tên branch không được có dấu cách, nếu có thì cần thay thế bằng dấu gạch ngang (-) hoặc dấu gạch dưới (_)
+		*****************************************************************
 
-
+--------------------------------------------------------------------------------
+TẢI PROJECT TỪ GITHUB VỀ MÁY
+--------------------------------------------------------------------------------
+✅ Tải project từ GitHub về máy:
+		1. Mở Git Bash hoặc CMD
+		2. Chuyển đến thư mục muốn lưu project:
+				cd D:\Projects\		#Ví dụ: chuyển đến thư mục D:\Projects\
+		3. Clone repo từ GitHub:
+				git clone
+			
