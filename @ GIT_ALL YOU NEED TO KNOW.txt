@@ -131,14 +131,14 @@ CÁC LỆNH QUẢN LÝ BRANCH TRÊN GITHUB
 				git commit -m "đang làm gì"		#Tạo 1 bản lưu với ghi chú là"đang làm gì" ví dụ:  git commit -m "đang chỉnh giao diện bán hàng"
 				git push -u origin "tên-branch-đang-làm-việc"		#Đẩy commit lên GitHub vào nhánh ""tên-branch-đang-làm-việc", tên này không có dấu cách
 
-		*****************************************************************
-		CHỈNH SỬA, CẬP NHẬT CODE TRÊN BRANCH MỚI:
+*****************************************************************
+CHỈNH SỬA, CẬP NHẬT CODE TRÊN BRANCH MỚI:
 
-				#Nếu tiếp tục làm việc trên nhánh này, sau chỉ cần:		
-						git add .
-						git commit -m "mô tả ngắn"   #chỗ này thì ghi nội dung gì cũng được (nên ghi rõ nội dung chỉnh sửa)
-						git push
-		*****************************************************************
+		#Nếu tiếp tục làm việc trên nhánh này, sau chỉ cần:		
+				git add .
+				git commit -m "mô tả ngắn"   #chỗ này thì ghi nội dung gì cũng được (nên ghi rõ nội dung chỉnh sửa)
+				git push
+*****************************************************************
 
 ✅ Nhập (merge) vào branch chính:
 		git checkout main		#Chuyển về branch chính
@@ -153,13 +153,27 @@ CÁC LỆNH QUẢN LÝ BRANCH TRÊN GITHUB
 				#Nếu muốn xóa branch local mà không cần merge, thì dùng lệnh:
 						git branch -D ten-branch		#Lưu ý: sẽ mất toàn bộ code trên branch này
 
-		*****************************************************************
-		✅ NẾU TRỰC TIẾP XOÁ BRANCH, TẠO BRANCH TRÊN TRÌNH DUYỆT VÀ MUỐN ĐỒNG BỘ LẠI VỚI TRÊN MÁY TÍNH:
-				git fetch origin		#Lấy về các thay đổi từ remote
-				git checkout -b ten-branch origin/ten-branch		#Tạo branch mới từ remote và chuyển sang branch đó
-						#Ví dụ: git checkout -b new-feature origin/new-feature
-						#Lưu ý: Tên branch không được có dấu cách, nếu có thì cần thay thế bằng dấu gạch ngang (-) hoặc dấu gạch dưới (_)
-		*****************************************************************
+*****************************************************************
+✅ NẾU TRỰC TIẾP XOÁ BRANCH, TẠO BRANCH TRÊN TRÌNH DUYỆT VÀ MUỐN ĐỒNG BỘ LẠI VỚI TRÊN MÁY TÍNH:
+		git fetch origin		#Lấy về các thay đổi từ remote
+		
+				#Nếu chưa có branch mới:
+						git checkout -b ten-branch origin/ten-branch	#tạo branch mới và chuyển sang branch đó để làm việc
+								#Lưu ý: Tên branch không được có dấu cách, nếu có thì cần thay thế bằng dấu gạch ngang (-) hoặc dấu gạch dưới (_)
+							
+				#Nếu đã có branch mới:
+						git checkout ten-branch		#Chuyển sang branch mới đã tạo trên GitHub
+						git pull origin ten-branch		#Lấy về các thay đổi từ remote branch ten-branch
+								#Lưu ý: Nếu có xung đột, sẽ hiện thông báo, cần sửa xung đột rồi commit lại
+										git push		#Đẩy code lên GitHub
+
+								#Nếu muốn xem các branch đã tạo trên GitHub, thì dùng lệnh:
+										git branch -r		#Hiển thị các branch trên remote (GitHub)
+
+								#Nếu muốn xem tất cả các branch (local + remote), thì dùng lệnh:
+										git branch -a		#Hiển thị tất cả các branch (local + remote)
+
+*****************************************************************
 
 --------------------------------------------------------------------------------
 TẢI PROJECT TỪ GITHUB VỀ MÁY

@@ -1,0 +1,84 @@
+﻿# 🚀 MALAN POS – PLANNING & CHECKLIST (KẾT HỢP ĐẦY ĐỦ)
+
+> **Mỗi VERSION (VER) là một milestone lớn.  
+> Mỗi VER lại chia thành các task nhỏ (checklist, code, UI/UX, feature, test...)**
+
+---
+
+## VER.1 – TÁCH ROUTE, GIAO DIỆN (UI/UX ĐẦU TIÊN)
+### /pos (PC/Tablet)
+- [x] Chuyển sang Next.js App Router (src/app)
+- [x] Xài hoàn toàn TypeScript + Tailwind
+- [x] Tách route /pos, /order
+- [x] Chia component: CategoryTabs, ProductSearch, ProductList, OrderPanel, OrderItemList
+- [x] Action bar cố định dưới cùng, order list max 10 món, scroll nếu nhiều hơn
+- [x] Thêm ô scan (barcode), auto focus, bấm Space để lấy lại focus
+- [x] UI responsive desktop/tablet
+- [x] Bỏ toàn bộ border/gạch không cần thiết (giao diện mạch lạc)
+- [x] Checklist/coding convention cho team
+
+### /order (Mobile)
+- [ ] Giao diện order cho khách hàng trên mobile
+- [ ] List đơn, trạng thái, thanh toán cơ bản
+
+---
+
+## VER.2 – KẾT NỐI BACKEND & DATABASE
+- [ ] Thiết kế API backend (RESTful)
+- [ ] Kết nối POS lấy danh sách sản phẩm, add order, update stock
+- [ ] Lưu log thao tác lên backend
+- [ ] Xây helper lib cho quản lý order (add, remove, update)
+- [ ] Xử lý error & loading state khi call API
+
+---
+
+## VER.3 – ĐỒNG BỘ REALTIME POS ↔ WEB ↔ APP
+- [ ] Sử dụng websocket hoặc webhook đồng bộ order đa thiết bị
+- [ ] Đơn web/app tự động hiển thị lên POS
+- [ ] Sửa/xóa đơn đồng bộ giữa các thiết bị
+- [ ] Thử nghiệm với nhiều thiết bị đồng thời
+
+---
+
+## VER.4 – PHÁT TRIỂN APP MOBILE (REACT NATIVE)
+- [ ] Khởi tạo app React Native (Expo CLI)
+- [ ] Giao diện order mobile giống web
+- [ ] Đồng bộ order/product qua API
+- [ ] Test sync dữ liệu mobile ↔ web ↔ POS
+
+---
+
+## VER.5 – PWA & OFFLINE SYNC
+- [ ] Cấu hình PWA cho POS (service worker, manifest)
+- [ ] Tích hợp Dexie hoặc PouchDB lưu local
+- [ ] Tự động sync dữ liệu khi online trở lại
+- [ ] Kiểm tra conflict khi đồng bộ
+
+---
+
+## VER.6 – TÍCH HỢP THANH TOÁN & IN BILL
+- [ ] Tích hợp Linkly EFTPOS hoặc máy POS thật
+- [ ] In hóa đơn trực tiếp hoặc PDF
+- [ ] Hỗ trợ in QR/VNPAY/MOMO...
+- [ ] Cho phép chọn máy in, thiết lập cấu hình bill
+
+---
+
+## VER.7 – POLISH UI/UX, TEST, HOÀN THIỆN
+- [ ] Nâng cấp giao diện, tinh chỉnh trải nghiệm thực tế (feedback nhân viên/quản lý)
+- [ ] Viết unit test cho component chính
+- [ ] Seed data demo cho sản phẩm/order
+- [ ] Chuẩn hóa tài liệu, hướng dẫn sử dụng
+- [ ] Đánh giá lại quy trình, tối ưu thêm nếu cần
+
+---
+
+## TÍNH NĂNG PHỤ TRỢ / TASK LẶT VẶT
+- [ ] Thêm âm thanh "beep" khi scan barcode thành công
+- [ ] Báo lỗi (toast/alert) nếu mã không hợp lệ
+- [ ] Thêm animation chuyển tab, highlight sản phẩm vừa add
+- [ ] Tối ưu thao tác chỉ dùng bàn phím cho POS
+- [ ] Đổi theme/dark mode (nếu cần)
+
+---
+

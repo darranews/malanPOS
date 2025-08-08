@@ -1,0 +1,71 @@
+﻿malanPOS/
+│
+├── public/
+│   └── images/
+│       └── products/
+│           └── (ảnh sản phẩm + default.png, no-image.png)
+│
+├── src/
+│   ├── app/
+│   │   ├── admin/
+│   │   │   └── page.tsx             # import AdminPage
+│   │   ├── order/
+│   │   │   └── page.tsx             # import OrderPage
+│   │   ├── pos/
+│   │   │   └── page.tsx             # import POSPage
+│   │   ├── layout.tsx
+│   │   └── globals.css
+│   │
+│   ├── components/
+│   │   ├── admin/
+│   │   │   ├── AdminPage.tsx
+│   │   │   ├── ProductManager.tsx
+│   │   │   ├── StockManager.tsx
+│   │   │   ├── OrderManager.tsx
+│   │   │   └── Report.tsx
+│   │   │
+│   │   ├── order/
+│   │   │   ├── OrderList.tsx
+│   │   │   ├── OrderPage.tsx
+│   │   │   ├── OrderProductCard.tsx
+│   │   │   ├── OrderSummary.tsx         # order summary detail (khác POS)
+│   │   │   └── PrintBillModal.tsx
+│   │   │
+│   │   ├── pos/
+│   │   │   ├── CategoryTabs.tsx
+│   │   │   ├── FloatingActionBar.tsx
+│   │   │   ├── OrderActions.tsx
+│   │   │   ├── OrderItemList.tsx
+│   │   │   ├── OrderPanel.tsx
+│   │   │   ├── OrderSummary.tsx         # summary của POS, (khác order)
+│   │   │   ├── POSPage.tsx
+│   │   │   └── ProductSearch.tsx
+│   │   │
+│   │   ├── product/
+│   │   │   ├── ProductCard.tsx
+│   │   │   ├── ProductItem.tsx
+│   │   │   ├── ProductList.tsx
+│   │   │   └── ProductModal.tsx
+│   │   │
+│   │   └── shared/
+│   │       ├── Alert.tsx
+│   │       ├── Button.tsx
+│   │       ├── ConfirmModal.tsx
+│   │       ├── Input.tsx
+│   │       └── Modal.tsx
+│   │
+│   ├── lib/
+│   │   ├── hooks/
+│   │   │   └── (sau này tạo: useOrder.ts, useProduct.ts ...)
+│   │   ├── services/
+│   │   │   └── (sau này: orderService.ts, productService.ts ...)
+│   │   ├── store/
+│   │   │   └── (nếu xài zustand/react-query)
+│   │   ├── utils/
+│   │   │   └── formatMoney.ts (hoặc các hàm tiện ích khác)
+│   │   └── types/
+│   │       ├── product.ts
+│   │       └── order.ts
+│   │
+│   └── styles/
+│       └── globals.css   # (nếu chưa move vào app)
