@@ -1,0 +1,147 @@
+--------------------------------------------------------------------------------
+CÁC BƯỚC ĐỂ TẠO GITHUB VÀ UPLOAD PROJECT LÊN GITHUB
+--------------------------------------------------------------------------------
+
+✅ Cài đặt Git (bắt buộc):
+		1. Tải Git:
+				👉 https://git-scm.com/downloads
+
+		2. Cài đặt Git (giữ mặc định):
+				Chạy file .exe vừa tải
+				Cứ Next → Next → Next liên tục (giữ các tùy chọn mặc định)
+				Nhớ tick dòng: Git from the command line and also from 3rd-party software
+				Khi cài xong, sẽ có:
+						Git Bash		#Cái này để chạy CODE, nhưng ý kiến cá nhân chạy bằng CMD_admin là tốt nhất
+						Dùng được lệnh git trong CMD, PowerShell hoặc VS Code
+
+✅ Kiểm tra Git đã cài chưa:
+		Mở CMD hoặc Git Bash → gõ:
+				git --version
+					Nếu ra git version 2.x.x là ok.
+
+✅ Tạo repo mới trên GitHub:
+		Vào https://github.com
+		Đăng nhập → Bấm + (góc trên phải) → chọn "New repository"
+		Điền:
+				Repository name:	#ví dụ malanPOS
+				Tick Private hoặc Public tuỳ ý
+				Không cần chọn “Initialize with README”
+		Nhấn Create repository.
+		Xong, GitHub sẽ hiện hướng dẫn để push code.
+
+✅ Mở terminal trong thư mục project:
+		Vào thư mục chứa source code	#ví dụ: D:\Projects\malanPOS
+				Chuột phải → chọn Git Bash Here		#Ý kiến cá nhân là xài CMD (admin)
+		Hoặc mở VS Code → Terminal → cd tới thư mục project
+
+✅ Khởi tạo Git Repo cục bộ:
+		git init
+
+✅ Thêm toàn bộ file vào stage:
+		git add .	#Gom hết file để chuẩn bị commit
+
+✅ Tạo commit đầu tiên:
+		git commit -m "Initial commit"		
+				#Ghi chú commit, có thể ghi bất kỳ nội dung gì
+				#Nên ghi rõ nội dung commit, ví dụ: "Đang làm giao diện bán hàng"
+
+✅ Kết nối repo cục bộ với repo trên GitHub:
+		git remote add origin https://github.com/tên-tài-khoản/tên-repo.git
+				#Ví dụ: git remote add origin https://github.com/darranews/malanPOS.git
+		Nếu repo đã có sẵn, thì sẽ báo lỗi, lúc này cần xóa remote cũ:
+				git remote remove origin
+		Sau đó làm lại lệnh trên để kết nối lại
+
+✅ Đặt tên branch chính GitHub (mặc định là main):
+		git branch -M main
+				#Nếu đã có branch main, thì sẽ báo lỗi, lúc này cần xóa branch cũ:
+						git branch -D main
+				Sau đó làm lại lệnh trên để đặt tên branch chính
+				#Lưu ý: Tên branch chính trên GitHub là "main", không phải "master" như trước đây
+				#Nếu muốn đặt tên khác, thì làm lệnh sau:
+				git branch -M ten-branch-chinh		#Ví dụ: git branch -M master
+✅ Đẩy code lên GitHub:
+		git push -u origin main
+				#Nếu đã có branch main trên GitHub, thì sẽ báo lỗi, lúc này cần xóa branch cũ:
+						git push origin --delete main
+						Sau đó làm lại lệnh trên để đẩy code lên GitHub
+				#Nếu muốn đẩy lên branch khác, thì làm lệnh sau:
+						git push -u origin ten-branch-chinh		#Ví dụ: git push -u origin master
+
+✅ Hoàn tất bước đầu đẩy code lên Github, sau đó khi cập nhật thì chạy những lệnh sau:
+		git add .		#Thêm toàn bộ file đã thay đổi vào stage.
+		git commit -m "mô tả ngắn"		#Tạo 1 bản lưu với ghi chú là "mô tả ngắn" ví dụ: git commit -m "đang chỉnh giao diện bán hàng"
+		git push		#Đẩy code lên GitHub - không cần chỉ định branch nữa, vì đã set upstream rồi
+
+--------------------------------------------------------------------------------
+CÁC LỆNH QUẢN LÝ BRANCH TRÊN GITHUB
+--------------------------------------------------------------------------------
+
+✅ Xem đang ở branch nào:
+		git branch
+	
+✅ Xem tất cả các branch trên remote (trên Github):
+		git branch -r
+				
+				#Nếu muốn xem cả branch local và remote, thì dùng lệnh:
+						git branch -a
+
+✅ Tạo branch (nhánh) mới:
+		git checkout -b ten-nhanh-moi		#không được có dấu cách
+				#Ví dụ: git checkout -b new-feature
+				#Lưu ý: Tên branch không được có dấu cách, nếu có thì cần thay thế bằng dấu gạch ngang (-) hoặc dấu gạch dưới (_)
+
+		#Nếu muốn tạo branch mới từ branch khác, thì cần chuyển sang branch đó trước:
+				git checkout ten-branch-canh-bien		#Chuyển sang branch canh-bien
+				git checkout -b ten-nhanh-moi		#Tạo branch mới từ branch canh-bien
+
+
+✅ Đổi tên branch local:
+		git branch -m ten-cu ten-moi
+				#Ví dụ: git branch -m old-branch new-branch
+				#Lưu ý: Tên branch không được có dấu cách, nếu có thì cần thay thế bằng dấu gạch ngang (-) hoặc dấu gạch dưới (_)
+				
+				#Nếu đang đứng trên branch đó, thì chỉ cần:
+						git branch -m ten-moi
+
+✅ Xóa branch cũ trên remote (trên GitHub):
+		git push origin --delete ten-cu
+
+✅ Push branch mới lên remote & set upstream:
+		git push -u origin ten-moi
+				#Lưu ý: Chỉ cần làm lệnh này 1 lần khi tạo branch mới, sau đó chỉ cần dùng lệnh git push để đẩy code lên branch đó
+				#Nếu đã có branch ten-moi trên GitHub, thì sẽ báo lỗi, lúc này cần xóa branch cũ:
+						git push origin --delete ten-moi
+				Sau đó làm lại lệnh trên để đẩy code lên GitHub
+
+		#Khi đang code trên branch mới, muốn push lên thì làm theo thứ tự sau:
+				git add .		
+				git commit -m "đang làm gì"		#Tạo 1 bản lưu với ghi chú là"đang làm gì" ví dụ:  git commit -m "đang chỉnh giao diện bán hàng"
+				git push -u origin "tên-branch-đang-làm-việc"		#Đẩy commit lên GitHub vào nhánh ""tên-branch-đang-làm-việc", tên này không có dấu cách
+
+---------------------------------------------------------------------------
+		CHỈNH SỬA, CẬP NHẬT CODE TRÊN BRANCH MỚI:
+
+				#Nếu tiếp tục làm việc trên nhánh này, sau chỉ cần:		
+						git add .
+						git commit -m "mô tả ngắn"   #chỗ này thì ghi nội dung gì cũng được (nên ghi rõ nội dung chỉnh sửa)
+						git push
+---------------------------------------------------------------------------	
+
+✅ Nhập (merge) vào branch chính:
+		git checkout main		#Chuyển về branch chính
+		git merge ten-branch		#Nhập branch ten-branch vào branch chính
+				#Nếu có xung đột, sẽ hiện thông báo, cần sửa xung đột rồi commit lại
+				git push		#Đẩy code lên GitHub
+
+✅ Xóa branch local:
+		git branch -d ten-branch		#Xóa branch local sau khi đã nhập vào branch chính
+				#Nếu muốn xóa branch local mà không cần merge, thì dùng lệnh:
+						git branch -D ten-branch		#Lưu ý: sẽ mất toàn bộ code trên branch này
+
+✅ Chuyển sang branch khác:
+		git checkout ten-branch		#Chuyển sang branch ten-branch
+				
+				#Nếu muốn chuyển sang branch khác mà chưa commit, thì cần dùng lệnh:
+						git checkout -b ten-branch		#Tạo branch mới và chuyển sang branch đó
+
