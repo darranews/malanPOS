@@ -83,8 +83,8 @@ CÁC LỆNH QUẢN LÝ BRANCH TRÊN GITHUB
 ✅ Xem tất cả các branch trên remote (trên Github):
 		git branch -r
 				
-				#Nếu muốn xem cả branch local và remote, thì dùng lệnh:
-						git branch -a
+✅ Nếu muốn xem cả branch local và remote, thì dùng lệnh:
+		git branch -a
 
 ✅ Tạo branch (nhánh) mới:
 		git checkout -b ten-nhanh-moi		#không được có dấu cách
@@ -94,6 +94,12 @@ CÁC LỆNH QUẢN LÝ BRANCH TRÊN GITHUB
 		#Nếu muốn tạo branch mới từ branch khác, thì cần chuyển sang branch đó trước:
 				git checkout ten-branch-canh-bien		#Chuyển sang branch canh-bien
 				git checkout -b ten-nhanh-moi		#Tạo branch mới từ branch canh-bien
+
+✅ Chuyển sang branch muốn làm việc:
+		git checkout ten-branch		#Chuyển sang branch ten-branch
+				
+				#Nếu muốn chuyển sang branch khác mà chưa commit, thì cần dùng lệnh:
+						git checkout -b ten-branch		#Tạo branch mới và chuyển sang branch đó
 
 
 ✅ Đổi tên branch local:
@@ -139,9 +145,5 @@ CÁC LỆNH QUẢN LÝ BRANCH TRÊN GITHUB
 				#Nếu muốn xóa branch local mà không cần merge, thì dùng lệnh:
 						git branch -D ten-branch		#Lưu ý: sẽ mất toàn bộ code trên branch này
 
-✅ Chuyển sang branch khác:
-		git checkout ten-branch		#Chuyển sang branch ten-branch
-				
-				#Nếu muốn chuyển sang branch khác mà chưa commit, thì cần dùng lệnh:
-						git checkout -b ten-branch		#Tạo branch mới và chuyển sang branch đó
+
 
