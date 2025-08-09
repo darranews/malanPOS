@@ -1,60 +1,72 @@
-'use client';
+import React from "react";
+import { OrderItem } from "@/lib/types/order";
+import { formatMoney } from "@/lib/utils/formatMoney";
+import { Trash2 } from "lucide-react";
 
-type OrderItemListProps = {
-  order: any[];
-  onIncrease: (id: any) => void;
-  onDecrease: (id: any) => void;
-  onRemove: (id: any) => void;
-  limit?: number;
-};
+interface OrderItemListProps {
+  items: { name: string; quantity: number; price: number }[];
+  selectedIndex: number;
+  onSelectIndex: (index: number) => void;
+  onRemoveItem: (index: number) => void;
+  onQuantityChange: (index: number, delta: number) => void;
+}
 
-export default function OrderItemList({
-  order,
-  onIncrease,
-  onDecrease,
-  onRemove,
-  limit,
-}: OrderItemListProps) {
-  const items = limit ? order.slice(0, limit) : order;
-
+export const OrderItemList: React.FC<OrderItemListProps> = ({
+  items,
+  selectedIndex,
+  onSelectIndex,
+  onRemoveItem,
+  onQuantityChange,
+}) => {
   return (
-    <div>
-      {items.length === 0 && (
-        <div className="text-center text-gray-400 mt-8">No items in order.</div>
-      )}
-      {items.map((item: any) => (
+    <div className="flex flex-col divide-y divide-border overflow-y-auto">
+      {items.map((item, index) => (
         <div
-          key={item.id}
-          className="flex items-center py-3 px-2 rounded-lg hover:bg-gray-50 transition"
-          // KHÔNG border, border-b, border-t ở đây!
+          key={index}
+          onClick={() => onSelectIndex(index)}
+          className={`flex items-center justify-between p-2 cursor-pointer ${
+            selectedIndex === index ? "bg-accent" : ""
+          }`}
         >
-          <div className="flex-1">
-            <div className="font-semibold">{item.name}</div>
-            <div className="text-xs text-gray-400">
-              Price: {item.price?.toFixed(2)} × Qty: {item.qty}
-            </div>
+          <div className="flex flex-col">
+            <span>{item.name}</span>
+            <span className="text-sm text-muted-foreground">
+              {formatMoney(item.price)} × {item.quantity}
+            </span>
           </div>
-          <div className="flex items-center gap-1">
+          <div className="flex items-center gap-2">
+            <span>{formatMoney(item.price * item.quantity)}</span>
             <button
-              className="px-2 py-1 rounded bg-gray-200 hover:bg-gray-300"
-              onClick={() => onDecrease(item.id)}
-              type="button"
-            >-</button>
-            <span className="px-2">{item.qty}</span>
+              onClick={(e) => {
+                e.stopPropagation();
+                onQuantityChange(index, -1);
+              }}
+              className="px-2 bg-gray-200 rounded"
+            >
+              -
+            </button>
             <button
-              className="px-2 py-1 rounded bg-gray-200 hover:bg-gray-300"
-              onClick={() => onIncrease(item.id)}
-              type="button"
-            >+</button>
+              onClick={(e) => {
+                e.stopPropagation();
+                onQuantityChange(index, 1);
+              }}
+              className="px-2 bg-gray-200 rounded"
+            >
+              +
+            </button>
+            <Trash2
+              className="cursor-pointer text-red-500"
+              onClick={(e) => {
+                e.stopPropagation();
+                onRemoveItem(index);
+              }}
+            />
           </div>
-          <button
-            className="ml-4 text-red-500 hover:text-red-700 font-bold px-2"
-            onClick={() => onRemove(item.id)}
-            type="button"
-            title="Remove"
-          >×</button>
         </div>
       ))}
     </div>
   );
-}
+};
+
+// ✅ Default export để page.tsx import không lỗi
+export default OrderItemList;

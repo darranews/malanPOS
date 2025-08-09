@@ -1,845 +1,1076 @@
 {
-  "products": [
+  "categories": [
     {
       "id": 1,
-      "name": "Latte #1",
-      "price": 3.39,
-      "category": "coffee",
-      "image": "/images/products/coffee.jpg"
+      "name": "Beverages"
     },
     {
       "id": 2,
-      "name": "Espresso #2",
-      "price": 3.38,
-      "category": "coffee",
-      "image": "/images/products/coffee.jpg"
+      "name": "Snacks"
     },
     {
       "id": 3,
-      "name": "Latte #3",
-      "price": 3.74,
-      "category": "coffee",
-      "image": "/images/products/coffee.jpg"
+      "name": "Dairy Products"
     },
     {
       "id": 4,
-      "name": "Latte #4",
-      "price": 5.77,
-      "category": "coffee",
-      "image": "/images/products/coffee.jpg"
+      "name": "Bakery"
     },
     {
       "id": 5,
-      "name": "Piccolo #5",
-      "price": 3.07,
-      "category": "coffee",
-      "image": "/images/products/coffee.jpg"
-    },
-    {
-      "id": 6,
-      "name": "Iced Latte #6",
-      "price": 6.67,
-      "category": "coffee",
-      "image": "/images/products/coffee.jpg"
-    },
-    {
-      "id": 7,
-      "name": "Piccolo #7",
-      "price": 7.28,
-      "category": "coffee",
-      "image": "/images/products/coffee.jpg"
-    },
-    {
-      "id": 8,
-      "name": "Iced Latte #8",
-      "price": 3.77,
-      "category": "coffee",
-      "image": "/images/products/coffee.jpg"
-    },
-    {
-      "id": 9,
-      "name": "Iced Latte #9",
-      "price": 6.69,
-      "category": "coffee",
-      "image": "/images/products/coffee.jpg"
-    },
-    {
-      "id": 10,
-      "name": "Iced Latte #10",
-      "price": 7.41,
-      "category": "coffee",
-      "image": "/images/products/coffee.jpg"
-    },
-    {
-      "id": 11,
-      "name": "Piccolo #11",
-      "price": 5.21,
-      "category": "coffee",
-      "image": "/images/products/coffee.jpg"
-    },
-    {
-      "id": 12,
-      "name": "Iced Latte #12",
-      "price": 7.13,
-      "category": "coffee",
-      "image": "/images/products/coffee.jpg"
-    },
-    {
-      "id": 13,
-      "name": "Espresso #13",
-      "price": 4.49,
-      "category": "coffee",
-      "image": "/images/products/coffee.jpg"
-    },
-    {
-      "id": 14,
-      "name": "Affogato #14",
-      "price": 3.85,
-      "category": "coffee",
-      "image": "/images/products/coffee.jpg"
-    },
-    {
-      "id": 15,
-      "name": "Iced Latte #15",
-      "price": 6.03,
-      "category": "coffee",
-      "image": "/images/products/coffee.jpg"
-    },
-    {
-      "id": 16,
-      "name": "Iced Latte #16",
-      "price": 4.85,
-      "category": "coffee",
-      "image": "/images/products/coffee.jpg"
-    },
-    {
-      "id": 17,
-      "name": "Cold Brew #17",
-      "price": 7.31,
-      "category": "coffee",
-      "image": "/images/products/coffee.jpg"
-    },
-    {
-      "id": 18,
-      "name": "Long Black #18",
-      "price": 5.63,
-      "category": "coffee",
-      "image": "/images/products/coffee.jpg"
-    },
-    {
-      "id": 19,
-      "name": "Cappuccino #19",
-      "price": 6.12,
-      "category": "coffee",
-      "image": "/images/products/coffee.jpg"
-    },
-    {
-      "id": 20,
-      "name": "Long Black #20",
-      "price": 7.56,
-      "category": "coffee",
-      "image": "/images/products/coffee.jpg"
-    },
-    {
-      "id": 21,
-      "name": "Affogato #21",
-      "price": 7.13,
-      "category": "coffee",
-      "image": "/images/products/coffee.jpg"
-    },
-    {
-      "id": 22,
-      "name": "Flat White #22",
-      "price": 6.66,
-      "category": "coffee",
-      "image": "/images/products/coffee.jpg"
-    },
-    {
-      "id": 23,
-      "name": "Piccolo #23",
-      "price": 3.14,
-      "category": "coffee",
-      "image": "/images/products/coffee.jpg"
-    },
-    {
-      "id": 24,
-      "name": "Piccolo #24",
-      "price": 3.77,
-      "category": "coffee",
-      "image": "/images/products/coffee.jpg"
-    },
-    {
-      "id": 25,
-      "name": "Cappuccino #25",
-      "price": 4.04,
-      "category": "coffee",
-      "image": "/images/products/coffee.jpg"
-    },
-    {
-      "id": 26,
-      "name": "Affogato #26",
-      "price": 6.88,
-      "category": "coffee",
-      "image": "/images/products/coffee.jpg"
-    },
-    {
-      "id": 27,
-      "name": "Affogato #27",
-      "price": 4.75,
-      "category": "coffee",
-      "image": "/images/products/coffee.jpg"
-    },
-    {
-      "id": 28,
-      "name": "Mocha #28",
-      "price": 6.97,
-      "category": "coffee",
-      "image": "/images/products/coffee.jpg"
-    },
-    {
-      "id": 29,
-      "name": "Iced Latte #29",
-      "price": 3.93,
-      "category": "coffee",
-      "image": "/images/products/coffee.jpg"
-    },
-    {
-      "id": 30,
-      "name": "Latte #30",
-      "price": 3.86,
-      "category": "coffee",
-      "image": "/images/products/coffee.jpg"
-    },
-    {
-      "id": 31,
-      "name": "Oolong Tea #1",
-      "price": 5.35,
-      "category": "tea",
-      "image": "/images/products/tea.jpg"
-    },
-    {
-      "id": 32,
-      "name": "Peppermint Tea #2",
-      "price": 6.65,
-      "category": "tea",
-      "image": "/images/products/tea.jpg"
-    },
-    {
-      "id": 33,
-      "name": "Earl Grey #3",
-      "price": 3.02,
-      "category": "tea",
-      "image": "/images/products/tea.jpg"
-    },
-    {
-      "id": 34,
-      "name": "Earl Grey #4",
-      "price": 4.16,
-      "category": "tea",
-      "image": "/images/products/tea.jpg"
-    },
-    {
-      "id": 35,
-      "name": "Oolong Tea #5",
-      "price": 6.92,
-      "category": "tea",
-      "image": "/images/products/tea.jpg"
-    },
-    {
-      "id": 36,
-      "name": "Peppermint Tea #6",
-      "price": 4.38,
-      "category": "tea",
-      "image": "/images/products/tea.jpg"
-    },
-    {
-      "id": 37,
-      "name": "Peppermint Tea #7",
-      "price": 4.17,
-      "category": "tea",
-      "image": "/images/products/tea.jpg"
-    },
-    {
-      "id": 38,
-      "name": "Lemon Tea #8",
-      "price": 5.7,
-      "category": "tea",
-      "image": "/images/products/tea.jpg"
-    },
-    {
-      "id": 39,
-      "name": "Oolong Tea #9",
-      "price": 6.37,
-      "category": "tea",
-      "image": "/images/products/tea.jpg"
-    },
-    {
-      "id": 40,
-      "name": "Peppermint Tea #10",
-      "price": 4.75,
-      "category": "tea",
-      "image": "/images/products/tea.jpg"
-    },
-    {
-      "id": 41,
-      "name": "Lemon Tea #11",
-      "price": 4.4,
-      "category": "tea",
-      "image": "/images/products/tea.jpg"
-    },
-    {
-      "id": 42,
-      "name": "Jasmine Tea #12",
-      "price": 6.0,
-      "category": "tea",
-      "image": "/images/products/tea.jpg"
-    },
-    {
-      "id": 43,
-      "name": "Chai Latte #13",
-      "price": 7.53,
-      "category": "tea",
-      "image": "/images/products/tea.jpg"
-    },
-    {
-      "id": 44,
-      "name": "English Breakfast #14",
-      "price": 3.15,
-      "category": "tea",
-      "image": "/images/products/tea.jpg"
-    },
-    {
-      "id": 45,
-      "name": "Jasmine Tea #15",
-      "price": 6.19,
-      "category": "tea",
-      "image": "/images/products/tea.jpg"
-    },
-    {
-      "id": 46,
-      "name": "Oolong Tea #16",
-      "price": 6.27,
-      "category": "tea",
-      "image": "/images/products/tea.jpg"
-    },
-    {
-      "id": 47,
-      "name": "Chamomile #17",
-      "price": 5.41,
-      "category": "tea",
-      "image": "/images/products/tea.jpg"
-    },
-    {
-      "id": 48,
-      "name": "Chai Latte #18",
-      "price": 4.22,
-      "category": "tea",
-      "image": "/images/products/tea.jpg"
-    },
-    {
-      "id": 49,
-      "name": "Peppermint Tea #19",
-      "price": 4.7,
-      "category": "tea",
-      "image": "/images/products/tea.jpg"
-    },
-    {
-      "id": 50,
-      "name": "Peppermint Tea #20",
-      "price": 4.97,
-      "category": "tea",
-      "image": "/images/products/tea.jpg"
-    },
-    {
-      "id": 51,
-      "name": "Oolong Tea #21",
-      "price": 4.82,
-      "category": "tea",
-      "image": "/images/products/tea.jpg"
-    },
-    {
-      "id": 52,
-      "name": "Chai Latte #22",
-      "price": 5.5,
-      "category": "tea",
-      "image": "/images/products/tea.jpg"
-    },
-    {
-      "id": 53,
-      "name": "Earl Grey #23",
-      "price": 7.36,
-      "category": "tea",
-      "image": "/images/products/tea.jpg"
-    },
-    {
-      "id": 54,
-      "name": "Green Tea #24",
-      "price": 7.43,
-      "category": "tea",
-      "image": "/images/products/tea.jpg"
-    },
-    {
-      "id": 55,
-      "name": "Green Tea #25",
-      "price": 3.17,
-      "category": "tea",
-      "image": "/images/products/tea.jpg"
-    },
-    {
-      "id": 56,
-      "name": "Green Tea #26",
-      "price": 3.21,
-      "category": "tea",
-      "image": "/images/products/tea.jpg"
-    },
-    {
-      "id": 57,
-      "name": "Green Tea #27",
-      "price": 6.96,
-      "category": "tea",
-      "image": "/images/products/tea.jpg"
-    },
-    {
-      "id": 58,
-      "name": "Chai Latte #28",
-      "price": 7.27,
-      "category": "tea",
-      "image": "/images/products/tea.jpg"
-    },
-    {
-      "id": 59,
-      "name": "Peppermint Tea #29",
-      "price": 5.7,
-      "category": "tea",
-      "image": "/images/products/tea.jpg"
-    },
-    {
-      "id": 60,
-      "name": "Lemon Tea #30",
-      "price": 7.49,
-      "category": "tea",
-      "image": "/images/products/tea.jpg"
-    },
-    {
-      "id": 61,
-      "name": "Red Velvet #1",
-      "price": 6.24,
-      "category": "cake",
-      "image": "/images/products/cake.jpg"
-    },
-    {
-      "id": 62,
-      "name": "Banoffee Pie #2",
-      "price": 5.52,
-      "category": "cake",
-      "image": "/images/products/cake.jpg"
-    },
-    {
-      "id": 63,
-      "name": "Brownie #3",
-      "price": 3.71,
-      "category": "cake",
-      "image": "/images/products/cake.jpg"
-    },
-    {
-      "id": 64,
-      "name": "Cheesecake #4",
-      "price": 5.17,
-      "category": "cake",
-      "image": "/images/products/cake.jpg"
-    },
-    {
-      "id": 65,
-      "name": "Chocolate Cake #5",
-      "price": 6.69,
-      "category": "cake",
-      "image": "/images/products/cake.jpg"
-    },
-    {
-      "id": 66,
-      "name": "Black Forest #6",
-      "price": 7.14,
-      "category": "cake",
-      "image": "/images/products/cake.jpg"
-    },
-    {
-      "id": 67,
-      "name": "Banoffee Pie #7",
-      "price": 5.1,
-      "category": "cake",
-      "image": "/images/products/cake.jpg"
-    },
-    {
-      "id": 68,
-      "name": "Brownie #8",
-      "price": 3.33,
-      "category": "cake",
-      "image": "/images/products/cake.jpg"
-    },
-    {
-      "id": 69,
-      "name": "Lemon Tart #9",
-      "price": 6.52,
-      "category": "cake",
-      "image": "/images/products/cake.jpg"
-    },
-    {
-      "id": 70,
-      "name": "Brownie #10",
-      "price": 6.19,
-      "category": "cake",
-      "image": "/images/products/cake.jpg"
-    },
-    {
-      "id": 71,
-      "name": "Banoffee Pie #11",
-      "price": 4.67,
-      "category": "cake",
-      "image": "/images/products/cake.jpg"
-    },
-    {
-      "id": 72,
-      "name": "Brownie #12",
-      "price": 7.56,
-      "category": "cake",
-      "image": "/images/products/cake.jpg"
-    },
-    {
-      "id": 73,
-      "name": "Lemon Tart #13",
-      "price": 5.39,
-      "category": "cake",
-      "image": "/images/products/cake.jpg"
-    },
-    {
-      "id": 74,
-      "name": "Brownie #14",
-      "price": 5.97,
-      "category": "cake",
-      "image": "/images/products/cake.jpg"
-    },
-    {
-      "id": 75,
-      "name": "Cheesecake #15",
-      "price": 5.78,
-      "category": "cake",
-      "image": "/images/products/cake.jpg"
-    },
-    {
-      "id": 76,
-      "name": "Carrot Cake #16",
-      "price": 5.17,
-      "category": "cake",
-      "image": "/images/products/cake.jpg"
-    },
-    {
-      "id": 77,
-      "name": "Brownie #17",
-      "price": 3.56,
-      "category": "cake",
-      "image": "/images/products/cake.jpg"
-    },
-    {
-      "id": 78,
-      "name": "Chocolate Cake #18",
-      "price": 5.43,
-      "category": "cake",
-      "image": "/images/products/cake.jpg"
-    },
-    {
-      "id": 79,
-      "name": "Apple Pie #19",
-      "price": 7.51,
-      "category": "cake",
-      "image": "/images/products/cake.jpg"
-    },
-    {
-      "id": 80,
-      "name": "Tiramisu #20",
-      "price": 4.59,
-      "category": "cake",
-      "image": "/images/products/cake.jpg"
-    },
-    {
-      "id": 81,
-      "name": "Lemon Tart #21",
-      "price": 4.09,
-      "category": "cake",
-      "image": "/images/products/cake.jpg"
-    },
-    {
-      "id": 82,
-      "name": "Cheesecake #22",
-      "price": 4.34,
-      "category": "cake",
-      "image": "/images/products/cake.jpg"
-    },
-    {
-      "id": 83,
-      "name": "Red Velvet #23",
-      "price": 7.27,
-      "category": "cake",
-      "image": "/images/products/cake.jpg"
-    },
-    {
-      "id": 84,
-      "name": "Red Velvet #24",
-      "price": 4.34,
-      "category": "cake",
-      "image": "/images/products/cake.jpg"
-    },
-    {
-      "id": 85,
-      "name": "Cheesecake #25",
-      "price": 5.43,
-      "category": "cake",
-      "image": "/images/products/cake.jpg"
-    },
-    {
-      "id": 86,
-      "name": "Chocolate Cake #26",
-      "price": 4.1,
-      "category": "cake",
-      "image": "/images/products/cake.jpg"
-    },
-    {
-      "id": 87,
-      "name": "Tiramisu #27",
-      "price": 6.61,
-      "category": "cake",
-      "image": "/images/products/cake.jpg"
-    },
-    {
-      "id": 88,
-      "name": "Cheesecake #28",
-      "price": 7.41,
-      "category": "cake",
-      "image": "/images/products/cake.jpg"
-    },
-    {
-      "id": 89,
-      "name": "Red Velvet #29",
-      "price": 6.45,
-      "category": "cake",
-      "image": "/images/products/cake.jpg"
-    },
-    {
-      "id": 90,
-      "name": "Red Velvet #30",
-      "price": 3.92,
-      "category": "cake",
-      "image": "/images/products/cake.jpg"
-    },
-    {
-      "id": 91,
-      "name": "Milkshake #1",
-      "price": 6.11,
-      "category": "other",
-      "image": "/images/products/other.jpg"
-    },
-    {
-      "id": 92,
-      "name": "Water Bottle #2",
-      "price": 5.84,
-      "category": "other",
-      "image": "/images/products/other.jpg"
-    },
-    {
-      "id": 93,
-      "name": "Muffin #3",
-      "price": 5.92,
-      "category": "other",
-      "image": "/images/products/other.jpg"
-    },
-    {
-      "id": 94,
-      "name": "Croissant #4",
-      "price": 4.91,
-      "category": "other",
-      "image": "/images/products/other.jpg"
-    },
-    {
-      "id": 95,
-      "name": "Hot Chocolate #5",
-      "price": 4.28,
-      "category": "other",
-      "image": "/images/products/other.jpg"
-    },
-    {
-      "id": 96,
-      "name": "Croissant #6",
-      "price": 3.04,
-      "category": "other",
-      "image": "/images/products/other.jpg"
-    },
-    {
-      "id": 97,
-      "name": "Muffin #7",
-      "price": 6.7,
-      "category": "other",
-      "image": "/images/products/other.jpg"
-    },
-    {
-      "id": 98,
-      "name": "Sandwich #8",
-      "price": 6.02,
-      "category": "other",
-      "image": "/images/products/other.jpg"
-    },
-    {
-      "id": 99,
-      "name": "Bagel #9",
-      "price": 5.67,
-      "category": "other",
-      "image": "/images/products/other.jpg"
-    },
-    {
-      "id": 100,
-      "name": "Bagel #10",
-      "price": 6.3,
-      "category": "other",
-      "image": "/images/products/other.jpg"
-    },
-    {
-      "id": 101,
-      "name": "Salad #11",
-      "price": 5.78,
-      "category": "other",
-      "image": "/images/products/other.jpg"
-    },
-    {
-      "id": 102,
-      "name": "Croissant #12",
-      "price": 4.37,
-      "category": "other",
-      "image": "/images/products/other.jpg"
-    },
-    {
-      "id": 103,
-      "name": "Water Bottle #13",
-      "price": 3.87,
-      "category": "other",
-      "image": "/images/products/other.jpg"
-    },
-    {
-      "id": 104,
-      "name": "Sandwich #14",
-      "price": 4.41,
-      "category": "other",
-      "image": "/images/products/other.jpg"
-    },
-    {
-      "id": 105,
-      "name": "Milkshake #15",
-      "price": 5.71,
-      "category": "other",
-      "image": "/images/products/other.jpg"
-    },
-    {
-      "id": 106,
-      "name": "Sandwich #16",
-      "price": 6.16,
-      "category": "other",
-      "image": "/images/products/other.jpg"
-    },
-    {
-      "id": 107,
-      "name": "Bagel #17",
-      "price": 5.04,
-      "category": "other",
-      "image": "/images/products/other.jpg"
-    },
-    {
-      "id": 108,
-      "name": "Hot Chocolate #18",
-      "price": 3.29,
-      "category": "other",
-      "image": "/images/products/other.jpg"
-    },
-    {
-      "id": 109,
-      "name": "Water Bottle #19",
-      "price": 6.47,
-      "category": "other",
-      "image": "/images/products/other.jpg"
-    },
-    {
-      "id": 110,
-      "name": "Milkshake #20",
-      "price": 4.9,
-      "category": "other",
-      "image": "/images/products/other.jpg"
-    },
-    {
-      "id": 111,
-      "name": "Muffin #21",
-      "price": 7.81,
-      "category": "other",
-      "image": "/images/products/other.jpg"
-    },
-    {
-      "id": 112,
-      "name": "Salad #22",
-      "price": 3.52,
-      "category": "other",
-      "image": "/images/products/other.jpg"
-    },
-    {
-      "id": 113,
-      "name": "Hot Chocolate #23",
-      "price": 6.29,
-      "category": "other",
-      "image": "/images/products/other.jpg"
-    },
-    {
-      "id": 114,
-      "name": "Bagel #24",
-      "price": 3.83,
-      "category": "other",
-      "image": "/images/products/other.jpg"
-    },
-    {
-      "id": 115,
-      "name": "Orange Juice #25",
-      "price": 6.57,
-      "category": "other",
-      "image": "/images/products/other.jpg"
-    },
-    {
-      "id": 116,
-      "name": "Muffin #26",
-      "price": 3.96,
-      "category": "other",
-      "image": "/images/products/other.jpg"
-    },
-    {
-      "id": 117,
-      "name": "Muffin #27",
-      "price": 4.69,
-      "category": "other",
-      "image": "/images/products/other.jpg"
-    },
-    {
-      "id": 118,
-      "name": "Muffin #28",
-      "price": 7.48,
-      "category": "other",
-      "image": "/images/products/other.jpg"
-    },
-    {
-      "id": 119,
-      "name": "Smoothie #29",
-      "price": 6.07,
-      "category": "other",
-      "image": "/images/products/other.jpg"
-    },
-    {
-      "id": 120,
-      "name": "Milkshake #30",
-      "price": 5.81,
-      "category": "other",
-      "image": "/images/products/other.jpg"
+      "name": "Fruits & Vegetables"
     }
   ],
-  "orders": []
+  "products": [
+    {
+      "id": "1-1",
+      "name": "Beverages Product 1",
+      "price": 39.32,
+      "categoryId": 1,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "1-2",
+      "name": "Beverages Product 2",
+      "price": 15.4,
+      "categoryId": 1,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "1-3",
+      "name": "Beverages Product 3",
+      "price": 20.73,
+      "categoryId": 1,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "1-4",
+      "name": "Beverages Product 4",
+      "price": 31.39,
+      "categoryId": 1,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "1-5",
+      "name": "Beverages Product 5",
+      "price": 16.26,
+      "categoryId": 1,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "1-6",
+      "name": "Beverages Product 6",
+      "price": 11.69,
+      "categoryId": 1,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "1-7",
+      "name": "Beverages Product 7",
+      "price": 27.29,
+      "categoryId": 1,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "1-8",
+      "name": "Beverages Product 8",
+      "price": 44.21,
+      "categoryId": 1,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "1-9",
+      "name": "Beverages Product 9",
+      "price": 10.42,
+      "categoryId": 1,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "1-10",
+      "name": "Beverages Product 10",
+      "price": 7.84,
+      "categoryId": 1,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "1-11",
+      "name": "Beverages Product 11",
+      "price": 44.25,
+      "categoryId": 1,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "1-12",
+      "name": "Beverages Product 12",
+      "price": 7.43,
+      "categoryId": 1,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "1-13",
+      "name": "Beverages Product 13",
+      "price": 28.15,
+      "categoryId": 1,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "1-14",
+      "name": "Beverages Product 14",
+      "price": 25.19,
+      "categoryId": 1,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "1-15",
+      "name": "Beverages Product 15",
+      "price": 14.63,
+      "categoryId": 1,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "1-16",
+      "name": "Beverages Product 16",
+      "price": 15.91,
+      "categoryId": 1,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "1-17",
+      "name": "Beverages Product 17",
+      "price": 16.77,
+      "categoryId": 1,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "1-18",
+      "name": "Beverages Product 18",
+      "price": 5.83,
+      "categoryId": 1,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "1-19",
+      "name": "Beverages Product 19",
+      "price": 40.81,
+      "categoryId": 1,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "1-20",
+      "name": "Beverages Product 20",
+      "price": 28.29,
+      "categoryId": 1,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "1-21",
+      "name": "Beverages Product 21",
+      "price": 6.11,
+      "categoryId": 1,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "1-22",
+      "name": "Beverages Product 22",
+      "price": 26.57,
+      "categoryId": 1,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "1-23",
+      "name": "Beverages Product 23",
+      "price": 7.9,
+      "categoryId": 1,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "1-24",
+      "name": "Beverages Product 24",
+      "price": 39.02,
+      "categoryId": 1,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "1-25",
+      "name": "Beverages Product 25",
+      "price": 34.73,
+      "categoryId": 1,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "1-26",
+      "name": "Beverages Product 26",
+      "price": 36.37,
+      "categoryId": 1,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "1-27",
+      "name": "Beverages Product 27",
+      "price": 48.73,
+      "categoryId": 1,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "1-28",
+      "name": "Beverages Product 28",
+      "price": 4.25,
+      "categoryId": 1,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "1-29",
+      "name": "Beverages Product 29",
+      "price": 6.35,
+      "categoryId": 1,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "1-30",
+      "name": "Beverages Product 30",
+      "price": 36.14,
+      "categoryId": 1,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "2-1",
+      "name": "Snacks Product 1",
+      "price": 43.17,
+      "categoryId": 2,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "2-2",
+      "name": "Snacks Product 2",
+      "price": 38.2,
+      "categoryId": 2,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "2-3",
+      "name": "Snacks Product 3",
+      "price": 40.05,
+      "categoryId": 2,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "2-4",
+      "name": "Snacks Product 4",
+      "price": 42.28,
+      "categoryId": 2,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "2-5",
+      "name": "Snacks Product 5",
+      "price": 49.08,
+      "categoryId": 2,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "2-6",
+      "name": "Snacks Product 6",
+      "price": 18.63,
+      "categoryId": 2,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "2-7",
+      "name": "Snacks Product 7",
+      "price": 8.33,
+      "categoryId": 2,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "2-8",
+      "name": "Snacks Product 8",
+      "price": 1.29,
+      "categoryId": 2,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "2-9",
+      "name": "Snacks Product 9",
+      "price": 22.34,
+      "categoryId": 2,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "2-10",
+      "name": "Snacks Product 10",
+      "price": 45.38,
+      "categoryId": 2,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "2-11",
+      "name": "Snacks Product 11",
+      "price": 40.28,
+      "categoryId": 2,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "2-12",
+      "name": "Snacks Product 12",
+      "price": 8.47,
+      "categoryId": 2,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "2-13",
+      "name": "Snacks Product 13",
+      "price": 16.76,
+      "categoryId": 2,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "2-14",
+      "name": "Snacks Product 14",
+      "price": 48.45,
+      "categoryId": 2,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "2-15",
+      "name": "Snacks Product 15",
+      "price": 11.44,
+      "categoryId": 2,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "2-16",
+      "name": "Snacks Product 16",
+      "price": 42.96,
+      "categoryId": 2,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "2-17",
+      "name": "Snacks Product 17",
+      "price": 16.25,
+      "categoryId": 2,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "2-18",
+      "name": "Snacks Product 18",
+      "price": 28.12,
+      "categoryId": 2,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "2-19",
+      "name": "Snacks Product 19",
+      "price": 46.02,
+      "categoryId": 2,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "2-20",
+      "name": "Snacks Product 20",
+      "price": 16.62,
+      "categoryId": 2,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "2-21",
+      "name": "Snacks Product 21",
+      "price": 28.48,
+      "categoryId": 2,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "2-22",
+      "name": "Snacks Product 22",
+      "price": 27.44,
+      "categoryId": 2,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "2-23",
+      "name": "Snacks Product 23",
+      "price": 1.56,
+      "categoryId": 2,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "2-24",
+      "name": "Snacks Product 24",
+      "price": 41.44,
+      "categoryId": 2,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "2-25",
+      "name": "Snacks Product 25",
+      "price": 40.99,
+      "categoryId": 2,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "2-26",
+      "name": "Snacks Product 26",
+      "price": 31.38,
+      "categoryId": 2,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "2-27",
+      "name": "Snacks Product 27",
+      "price": 3.8,
+      "categoryId": 2,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "2-28",
+      "name": "Snacks Product 28",
+      "price": 37.62,
+      "categoryId": 2,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "2-29",
+      "name": "Snacks Product 29",
+      "price": 10.44,
+      "categoryId": 2,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "2-30",
+      "name": "Snacks Product 30",
+      "price": 1.01,
+      "categoryId": 2,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "3-1",
+      "name": "Dairy Products Product 1",
+      "price": 40.62,
+      "categoryId": 3,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "3-2",
+      "name": "Dairy Products Product 2",
+      "price": 22.42,
+      "categoryId": 3,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "3-3",
+      "name": "Dairy Products Product 3",
+      "price": 36.35,
+      "categoryId": 3,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "3-4",
+      "name": "Dairy Products Product 4",
+      "price": 2.05,
+      "categoryId": 3,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "3-5",
+      "name": "Dairy Products Product 5",
+      "price": 6.97,
+      "categoryId": 3,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "3-6",
+      "name": "Dairy Products Product 6",
+      "price": 39.29,
+      "categoryId": 3,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "3-7",
+      "name": "Dairy Products Product 7",
+      "price": 39.94,
+      "categoryId": 3,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "3-8",
+      "name": "Dairy Products Product 8",
+      "price": 2.22,
+      "categoryId": 3,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "3-9",
+      "name": "Dairy Products Product 9",
+      "price": 25.62,
+      "categoryId": 3,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "3-10",
+      "name": "Dairy Products Product 10",
+      "price": 48.01,
+      "categoryId": 3,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "3-11",
+      "name": "Dairy Products Product 11",
+      "price": 15.25,
+      "categoryId": 3,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "3-12",
+      "name": "Dairy Products Product 12",
+      "price": 20.29,
+      "categoryId": 3,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "3-13",
+      "name": "Dairy Products Product 13",
+      "price": 10.41,
+      "categoryId": 3,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "3-14",
+      "name": "Dairy Products Product 14",
+      "price": 44.59,
+      "categoryId": 3,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "3-15",
+      "name": "Dairy Products Product 15",
+      "price": 30.88,
+      "categoryId": 3,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "3-16",
+      "name": "Dairy Products Product 16",
+      "price": 41.3,
+      "categoryId": 3,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "3-17",
+      "name": "Dairy Products Product 17",
+      "price": 20.72,
+      "categoryId": 3,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "3-18",
+      "name": "Dairy Products Product 18",
+      "price": 11.39,
+      "categoryId": 3,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "3-19",
+      "name": "Dairy Products Product 19",
+      "price": 13.19,
+      "categoryId": 3,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "3-20",
+      "name": "Dairy Products Product 20",
+      "price": 38.15,
+      "categoryId": 3,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "3-21",
+      "name": "Dairy Products Product 21",
+      "price": 9.11,
+      "categoryId": 3,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "3-22",
+      "name": "Dairy Products Product 22",
+      "price": 30.57,
+      "categoryId": 3,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "3-23",
+      "name": "Dairy Products Product 23",
+      "price": 20.17,
+      "categoryId": 3,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "3-24",
+      "name": "Dairy Products Product 24",
+      "price": 36.85,
+      "categoryId": 3,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "3-25",
+      "name": "Dairy Products Product 25",
+      "price": 43.73,
+      "categoryId": 3,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "3-26",
+      "name": "Dairy Products Product 26",
+      "price": 32.67,
+      "categoryId": 3,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "3-27",
+      "name": "Dairy Products Product 27",
+      "price": 25.87,
+      "categoryId": 3,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "3-28",
+      "name": "Dairy Products Product 28",
+      "price": 17.21,
+      "categoryId": 3,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "3-29",
+      "name": "Dairy Products Product 29",
+      "price": 49.88,
+      "categoryId": 3,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "3-30",
+      "name": "Dairy Products Product 30",
+      "price": 24.21,
+      "categoryId": 3,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "4-1",
+      "name": "Bakery Product 1",
+      "price": 14.39,
+      "categoryId": 4,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "4-2",
+      "name": "Bakery Product 2",
+      "price": 10.51,
+      "categoryId": 4,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "4-3",
+      "name": "Bakery Product 3",
+      "price": 31.84,
+      "categoryId": 4,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "4-4",
+      "name": "Bakery Product 4",
+      "price": 3.92,
+      "categoryId": 4,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "4-5",
+      "name": "Bakery Product 5",
+      "price": 44.3,
+      "categoryId": 4,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "4-6",
+      "name": "Bakery Product 6",
+      "price": 22.28,
+      "categoryId": 4,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "4-7",
+      "name": "Bakery Product 7",
+      "price": 2.02,
+      "categoryId": 4,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "4-8",
+      "name": "Bakery Product 8",
+      "price": 35.8,
+      "categoryId": 4,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "4-9",
+      "name": "Bakery Product 9",
+      "price": 15.02,
+      "categoryId": 4,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "4-10",
+      "name": "Bakery Product 10",
+      "price": 33.12,
+      "categoryId": 4,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "4-11",
+      "name": "Bakery Product 11",
+      "price": 18.89,
+      "categoryId": 4,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "4-12",
+      "name": "Bakery Product 12",
+      "price": 4.56,
+      "categoryId": 4,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "4-13",
+      "name": "Bakery Product 13",
+      "price": 1.45,
+      "categoryId": 4,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "4-14",
+      "name": "Bakery Product 14",
+      "price": 25.92,
+      "categoryId": 4,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "4-15",
+      "name": "Bakery Product 15",
+      "price": 43.41,
+      "categoryId": 4,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "4-16",
+      "name": "Bakery Product 16",
+      "price": 30.35,
+      "categoryId": 4,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "4-17",
+      "name": "Bakery Product 17",
+      "price": 41.72,
+      "categoryId": 4,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "4-18",
+      "name": "Bakery Product 18",
+      "price": 24.71,
+      "categoryId": 4,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "4-19",
+      "name": "Bakery Product 19",
+      "price": 26.55,
+      "categoryId": 4,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "4-20",
+      "name": "Bakery Product 20",
+      "price": 26.49,
+      "categoryId": 4,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "4-21",
+      "name": "Bakery Product 21",
+      "price": 31.76,
+      "categoryId": 4,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "4-22",
+      "name": "Bakery Product 22",
+      "price": 13.14,
+      "categoryId": 4,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "4-23",
+      "name": "Bakery Product 23",
+      "price": 37.53,
+      "categoryId": 4,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "4-24",
+      "name": "Bakery Product 24",
+      "price": 5.75,
+      "categoryId": 4,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "4-25",
+      "name": "Bakery Product 25",
+      "price": 38.47,
+      "categoryId": 4,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "4-26",
+      "name": "Bakery Product 26",
+      "price": 43.11,
+      "categoryId": 4,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "4-27",
+      "name": "Bakery Product 27",
+      "price": 22.54,
+      "categoryId": 4,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "4-28",
+      "name": "Bakery Product 28",
+      "price": 36.75,
+      "categoryId": 4,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "4-29",
+      "name": "Bakery Product 29",
+      "price": 45.49,
+      "categoryId": 4,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "4-30",
+      "name": "Bakery Product 30",
+      "price": 7.42,
+      "categoryId": 4,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "5-1",
+      "name": "Fruits & Vegetables Product 1",
+      "price": 32.91,
+      "categoryId": 5,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "5-2",
+      "name": "Fruits & Vegetables Product 2",
+      "price": 44.99,
+      "categoryId": 5,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "5-3",
+      "name": "Fruits & Vegetables Product 3",
+      "price": 22.85,
+      "categoryId": 5,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "5-4",
+      "name": "Fruits & Vegetables Product 4",
+      "price": 17.88,
+      "categoryId": 5,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "5-5",
+      "name": "Fruits & Vegetables Product 5",
+      "price": 26.76,
+      "categoryId": 5,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "5-6",
+      "name": "Fruits & Vegetables Product 6",
+      "price": 27.37,
+      "categoryId": 5,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "5-7",
+      "name": "Fruits & Vegetables Product 7",
+      "price": 12.23,
+      "categoryId": 5,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "5-8",
+      "name": "Fruits & Vegetables Product 8",
+      "price": 38.81,
+      "categoryId": 5,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "5-9",
+      "name": "Fruits & Vegetables Product 9",
+      "price": 40.85,
+      "categoryId": 5,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "5-10",
+      "name": "Fruits & Vegetables Product 10",
+      "price": 41.77,
+      "categoryId": 5,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "5-11",
+      "name": "Fruits & Vegetables Product 11",
+      "price": 10.42,
+      "categoryId": 5,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "5-12",
+      "name": "Fruits & Vegetables Product 12",
+      "price": 40.89,
+      "categoryId": 5,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "5-13",
+      "name": "Fruits & Vegetables Product 13",
+      "price": 48.51,
+      "categoryId": 5,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "5-14",
+      "name": "Fruits & Vegetables Product 14",
+      "price": 17.03,
+      "categoryId": 5,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "5-15",
+      "name": "Fruits & Vegetables Product 15",
+      "price": 1.09,
+      "categoryId": 5,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "5-16",
+      "name": "Fruits & Vegetables Product 16",
+      "price": 17.99,
+      "categoryId": 5,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "5-17",
+      "name": "Fruits & Vegetables Product 17",
+      "price": 32.57,
+      "categoryId": 5,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "5-18",
+      "name": "Fruits & Vegetables Product 18",
+      "price": 32.71,
+      "categoryId": 5,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "5-19",
+      "name": "Fruits & Vegetables Product 19",
+      "price": 11.89,
+      "categoryId": 5,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "5-20",
+      "name": "Fruits & Vegetables Product 20",
+      "price": 3.52,
+      "categoryId": 5,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "5-21",
+      "name": "Fruits & Vegetables Product 21",
+      "price": 21.25,
+      "categoryId": 5,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "5-22",
+      "name": "Fruits & Vegetables Product 22",
+      "price": 37.69,
+      "categoryId": 5,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "5-23",
+      "name": "Fruits & Vegetables Product 23",
+      "price": 14.55,
+      "categoryId": 5,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "5-24",
+      "name": "Fruits & Vegetables Product 24",
+      "price": 40.96,
+      "categoryId": 5,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "5-25",
+      "name": "Fruits & Vegetables Product 25",
+      "price": 42.58,
+      "categoryId": 5,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "5-26",
+      "name": "Fruits & Vegetables Product 26",
+      "price": 9.8,
+      "categoryId": 5,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "5-27",
+      "name": "Fruits & Vegetables Product 27",
+      "price": 42.75,
+      "categoryId": 5,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "5-28",
+      "name": "Fruits & Vegetables Product 28",
+      "price": 42.57,
+      "categoryId": 5,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "5-29",
+      "name": "Fruits & Vegetables Product 29",
+      "price": 14.6,
+      "categoryId": 5,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": "5-30",
+      "name": "Fruits & Vegetables Product 30",
+      "price": 46.93,
+      "categoryId": 5,
+      "image": "/images/default.jpg"
+    }
+  ]
 }

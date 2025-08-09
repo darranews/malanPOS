@@ -1,34 +1,35 @@
+// src/lib/services/productService.ts
+import api from "./api";
 import { Product } from "@/lib/types/product";
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:3000/api";
+// Lấy danh sách sản phẩm
+export const getProducts = async (): Promise<Product[]> => {
+  const res = await api.get<Product[]>("/products");
+  return res.data;
+};
 
-export async function getProducts(): Promise<Product[]> {
-  const res = await fetch(`${API_URL}/products`);
-  if (!res.ok) throw new Error("Failed to fetch products");
-  return res.json();
-}
+// Lấy chi tiết 1 sản phẩm
+export const getProductById = async (id: string): Promise<Product> => {
+  const res = await api.get<Product>(`/products/${id}`);
+  return res.data;
+};
 
-export async function createProduct(product: Omit<Product, "id">): Promise<Product> {
-  const res = await fetch(`${API_URL}/products`, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(product),
-  });
-  if (!res.ok) throw new Error("Failed to create product");
-  return res.json();
-}
+// Thêm sản phẩm mới
+export const addProduct = async (product: Product): Promise<Product> => {
+  const res = await api.post<Product>("/products", product);
+  return res.data;
+};
 
-export async function updateProductById(id: number | string, updates: Partial<Product>): Promise<Product> {
-  const res = await fetch(`${API_URL}/products/${id}`, {
-    method: "PUT",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(updates),
-  });
-  if (!res.ok) throw new Error("Failed to update product");
-  return res.json();
-}
+// Cập nhật sản phẩm
+export const updateProduct = async (
+  id: string,
+  product: Partial<Product>
+): Promise<Product> => {
+  const res = await api.put<Product>(`/products/${id}`, product);
+  return res.data;
+};
 
-export async function deleteProductById(id: number | string): Promise<void> {
-  const res = await fetch(`${API_URL}/products/${id}`, { method: "DELETE" });
-  if (!res.ok) throw new Error("Failed to delete product");
-}
+// Xóa sản phẩm
+export const deleteProduct = async (id: string): Promise<void> => {
+  await api.delete(`/products/${id}`);
+};

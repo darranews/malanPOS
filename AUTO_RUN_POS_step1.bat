@@ -3,6 +3,6 @@
 cd /d %~dp0
 
 :: Chạy dev server
-call json-server --watch db.json --port 3000
+call json-server --watch db.json --port 3001
 
 pause

@@ -1,4 +1,5 @@
 'use client';
+import React from "react";
 import type { Product } from "@/lib/types";
 
 type ProductItemProps = {
@@ -8,6 +9,7 @@ type ProductItemProps = {
   onTouchStart?: (product: Product, idx?: number) => void;
   onTouchEnd?: () => void;
   idx?: number;
+  className?: string;
 };
 
 export default function ProductItem({
@@ -17,37 +19,34 @@ export default function ProductItem({
   onTouchStart,
   onTouchEnd,
   idx,
+  className = "",
 }: ProductItemProps) {
   const handleRightClick = (e: React.MouseEvent<HTMLDivElement>) => {
     e.preventDefault();
     if (onEdit) onEdit(product, idx);
   };
 
-  const imgSrc = `/images/products/${product.name.replace(/\s+/g, "").toLowerCase()}.png`;
+  const imgSrc =
+    product.image && product.image.trim() !== ""
+      ? product.image
+      : "/images/default.jpg";
 
   return (
     <div
-      className="bg-white rounded-2xl shadow-md flex flex-col items-center p-3 cursor-pointer hover:shadow-lg transition select-none"
+      className={`p-2 border rounded cursor-pointer hover:bg-gray-100 ${className}`}
       onClick={() => onAddToOrder(product)}
       onContextMenu={handleRightClick}
-      onTouchStart={e => onTouchStart && onTouchStart(product, idx)}
-      onTouchEnd={e => onTouchEnd && onTouchEnd()}
+      onTouchStart={() => onTouchStart && onTouchStart(product, idx)}
+      onTouchEnd={onTouchEnd}
     >
-      <div className="w-full h-32 flex items-center justify-center mb-3">
-        <img
-          src={imgSrc}
-          alt={product.name}
-          className="object-cover w-full h-full rounded-xl shadow"
-          onError={e => {
-            const target = e.target as HTMLImageElement;
-            target.onerror = null;
-            target.src = "/images/products/default.png";
-          }}
-        />
-      </div>
-      <div className="text-sm text-gray-900 text-center">{product.name}</div>
-      <div className="mt-2 text-xl font-bold text-gray-700 text-center">
-        {Number(product.price).toFixed(2)}
+      <img
+        src={imgSrc}
+        alt={product.name}
+        className="w-full h-24 object-cover rounded"
+      />
+      <div className="mt-2 text-sm font-semibold">{product.name}</div>
+      <div className="text-xs text-gray-500">
+        ${product.price.toFixed(2)} AUD
       </div>
     </div>
   );

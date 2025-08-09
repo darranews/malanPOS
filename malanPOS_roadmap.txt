@@ -1,0 +1,178 @@
+I. Giai đoạn 1 – Hoàn thiện POS FnB
+(Tương ứng Version 1–2 trong Mix Pattern)
+🎯 Mục tiêu: POS FnB chạy ổn định, UI hoàn chỉnh.
+
+1. Bố cục & Giao diện
+1.1. Áp dụng Square POS layout:
+
+1.1.1. Bên trái: Grid sản phẩm (màu category + icon).
+
+1.1.2. Bên phải: Order list + thanh toán.
+
+1.2. Responsive desktop ↔ tablet ↔ mobile.
+
+1.3. Tối ưu thao tác bàn phím (barcode, Enter, Space).
+
+2. Order Panel
+2.1. Thêm sản phẩm vào order.
+
+2.2. Chỉnh số lượng.
+
+2.3. Xoá sản phẩm.
+
+2.4. Long-press để edit.
+
+3. Tìm kiếm & Filter
+3.1. Search sản phẩm nhanh.
+
+3.2. Filter nâng cao (category, stock status).
+
+4. In hóa đơn
+4.1. Tích hợp PrintBillModal.
+
+4.2. Chuẩn hóa khổ 58mm.
+
+4.3. Tối ưu layout hóa đơn cho mobile print.
+
+5. UI/UX nâng cao
+5.1. Dark mode switch (Toast POS pattern).
+
+5.2. Quick Add list cho sản phẩm bán chạy.
+
+5.3. Shortcut bàn phím cho Quick Add.
+
+5.4. Đồng bộ toàn bộ UI với shadcn/ui.
+
+II. Giai đoạn 2 – Retailer Mode
+(Tương ứng Version 4–5 trong Mix Pattern)
+🎯 Mục tiêu: Tối ưu cho bán lẻ, tốc độ nhập hàng nhanh.
+
+1. Layout & Tính năng Retail
+1.1. Layout barcode scan + nhập số lượng nhanh.
+
+1.2. Tắt/tối giản FnB features (ghi chú món, bàn số).
+
+2. Cấu hình chế độ
+2.1. Settings: Chuyển FnB ↔ Retail.
+
+2.2. Lưu chế độ đã chọn (localStorage + DB).
+
+3. Mobile Flow
+3.1. Modal thanh toán dạng bottom sheet (Shopify POS pattern).
+
+3.2. Giảm số click thanh toán.
+
+4. Multi-Cart (Vend POS pattern)
+4.1. Tab/cart switcher.
+
+4.2. Lưu tạm từng cart (local DB).
+
+4.3. Chuyển qua lại không mất dữ liệu.
+
+III. Giai đoạn 3 – License & Thương mại
+🎯 Mục tiêu: Chuẩn bị bán thương mại.
+
+1. Cơ chế license key
+1.1. Khóa tính năng theo gói (FnB, Retail, Full).
+
+1.2. Hạn sử dụng (1 năm).
+
+1.3. Check online/offline.
+
+2. Trang kích hoạt
+2.1. Form nhập license.
+
+2.2. Validate từ server.
+
+3. Bảo mật license
+3.1. Mã hóa dữ liệu license (JWT + Encryption).
+
+3.2. Ngăn crack đơn giản.
+
+IV. Giai đoạn 4 – Mở rộng & Tối ưu
+(Tương ứng Version 3, 6, 7, 8, 9 trong Mix Pattern)
+🎯 Mục tiêu: Backend, realtime, tối ưu trải nghiệm.
+
+1. Backend & API
+1.1. Tích hợp DB thật (PostgreSQL/MySQL).
+
+1.2. API bảo mật (JWT, role-based access).
+
+1.3. Chuyển sang Next.js API Routes hoặc backend riêng.
+
+2. Realtime & Đồng bộ
+2.1. WebSocket (Socket.IO/Supabase Realtime).
+
+2.2. Sync nhiều thiết bị.
+
+3. PWA & Offline
+3.1. PWA setup (manifest, service worker).
+
+3.2. Dexie/PouchDB lưu local.
+
+3.3. Tự sync khi online.
+
+4. Dashboard Mini (Lightspeed POS pattern)
+4.1. Doanh thu hôm nay.
+
+4.2. Số đơn đã xử lý.
+
+4.3. Món sắp hết hàng.
+
+5. Thanh toán & In hóa đơn nâng cao
+5.1. Linkly EFTPOS.
+
+5.2. QR/VNPAY/MOMO.
+
+6. Tối ưu UX/UI
+6.1. Responsive mobile/tablet.
+
+6.2. Next/Image priority + sizes.
+
+6.3. Theme manager (chỉnh màu từ setting).
+
+7. Đa ngôn ngữ & đa tiền tệ
+7.1. Hỗ trợ nhiều ngôn ngữ (EN, VN, …).
+
+7.2. Chuyển đổi ngôn ngữ trong setting.
+
+7.3. Hỗ trợ nhiều loại tiền tệ.
+
+7.4. Chuyển đổi và in đúng đơn vị tiền tệ.
+
+7.5. Format số & ngày theo locale người dùng.
+
+V. Đề xuất kỹ thuật chung
+State management: Zustand hoặc Redux Toolkit.
+
+UI: shadcn/ui + Tailwind.
+
+API: Next.js API Routes / Backend riêng (NestJS).
+
+License: JWT + Encryption.
+
+Realtime: WebSocket / Supabase.
+
+📌 Thứ tự làm việc đề xuất:
+
+Giai đoạn 1 → Hoàn thiện POS FnB.
+
+Một phần Giai đoạn 4 → API & DB để POS thật sự hoạt động.
+
+Giai đoạn 2 → Retail mode + mobile flow.
+
+Giai đoạn 3 → License key & thương mại hóa.
+
+Hoàn thiện Giai đoạn 4 → PWA, realtime, tối ưu.
+
+Nếu mày muốn, tao có thể làm bảng Excel hoặc Notion Kanban với cấu trúc y chang bảng này, kèm checkbox để đánh dấu từng task hoàn thành.
+Muốn tao xuất bản thành bảng quản lý luôn không?
+Làm vậy team dev dễ follow hơn nhiều.
+
+
+
+
+
+
+
+Ask ChatGPT

@@ -1,0 +1,34 @@
+Bộ phím tắt đề xuất mới cho POS của mày
+1. Tìm kiếm & Barcode
+Space → Focus vào ô Search (để gõ hoặc quét barcode ngay).
+
+Barcode scan → Tự động tìm và auto-add sản phẩm (đã có sẵn).
+
+Enter trong Search → Nếu có kết quả duy nhất thì auto-add, nếu nhiều thì highlight.
+
+2. Quick Add
+Alt + 1 → Alt + 9 → Thêm nhanh các sản phẩm trong Quick Add list (theo thứ tự hiển thị).
+
+Ví dụ: Alt + 1 → Sản phẩm Quick Add đầu tiên.
+
+3. Order thao tác
+↑ / ↓ → Di chuyển chọn sản phẩm trong Order list.
+
++ → Tăng số lượng sản phẩm đang chọn.
+
+- → Giảm số lượng sản phẩm đang chọn.
+
+Delete → Xóa sản phẩm đang chọn.
+
+4. Thanh toán & Hóa đơn
+F4 → Mở modal thanh toán.
+
+F9 → Thanh toán & in hóa đơn (checkout ngay).
+
+Esc → Đóng modal hiện tại (Print Bill, Payment...).
+
+5. Multi-cart (khi làm Giai đoạn 2)
+Ctrl + 1…9 → Chuyển giữa các giỏ hàng đang mở.
+
+Ctrl + N → Tạo giỏ hàng mới.
+

@@ -1,19 +1,35 @@
+// src/lib/services/orderService.ts
+import api from "./api";
 import { Order } from "@/lib/types/order";
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:3000/api";
+// Lấy danh sách đơn hàng
+export const getOrders = async (): Promise<Order[]> => {
+  const res = await api.get<Order[]>("/orders");
+  return res.data;
+};
 
-export async function getOrders(): Promise<Order[]> {
-  const res = await fetch(`${API_URL}/orders`);
-  if (!res.ok) throw new Error("Failed to fetch orders");
-  return res.json();
-}
+// Lấy chi tiết 1 đơn hàng
+export const getOrderById = async (id: string): Promise<Order> => {
+  const res = await api.get<Order>(`/orders/${id}`);
+  return res.data;
+};
 
-export async function createNewOrder(order: Partial<Order>): Promise<Order> {
-  const res = await fetch(`${API_URL}/orders`, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(order),
-  });
-  if (!res.ok) throw new Error("Failed to create order");
-  return res.json();
-}
+// Tạo đơn hàng mới
+export const createOrder = async (order: Order): Promise<Order> => {
+  const res = await api.post<Order>("/orders", order);
+  return res.data;
+};
+
+// Cập nhật đơn hàng
+export const updateOrder = async (
+  id: string,
+  order: Partial<Order>
+): Promise<Order> => {
+  const res = await api.put<Order>(`/orders/${id}`, order);
+  return res.data;
+};
+
+// Xóa đơn hàng
+export const deleteOrder = async (id: string): Promise<void> => {
+  await api.delete(`/orders/${id}`);
+};
