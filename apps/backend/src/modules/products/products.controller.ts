@@ -1,17 +1,8 @@
 // src/modules/products/products.controller.ts
-import {
-  Controller,
-  Get,
-  Post,
-  Body,
-  Param,
-  Patch,
-  Delete,
-  ParseIntPipe,
-} from "@nestjs/common";
-import { ProductsService } from "./products.service";
-import { CreateProductDto } from "./dto/create-product.dto";
-import { UpdateProductDto } from "./dto/update-product.dto";
+import { Controller, Get, Post, Body, Param, Patch, Delete, ParseIntPipe } from "@nestjs/common";
+import { ProductsService } from "@/modules/products/products.service";
+import { CreateProductDto } from "@/modules/products/dto/create-product.dto";
+import { UpdateProductDto } from "@/modules/products/dto/update-product.dto";
 
 @Controller("products")
 export class ProductsController {

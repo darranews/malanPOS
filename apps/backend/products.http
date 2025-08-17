@@ -1,0 +1,46 @@
+### Lấy danh sách sản phẩm
+GET http://localhost:3001/products
+Content-Type: application/json
+
+
+### Tạo sản phẩm mới
+POST http://localhost:3001/products
+Content-Type: application/json
+
+{
+  "name": "Mocha",
+  "price": 3.5,
+  "categoryId": 1
+}
+
+
+### Lấy chi tiết 1 sản phẩm
+GET http://localhost:3001/products/1
+Content-Type: application/json
+
+
+### Cập nhật sản phẩm
+PATCH http://localhost:3001/products/1
+Content-Type: application/json
+
+{
+  "name": "Mocha Latte",
+  "price": 3.8
+}
+
+
+### Xoá sản phẩm
+DELETE http://localhost:3001/products/1
+Content-Type: application/json
+
+### Lấy danh sách categories
+GET http://localhost:3001/categories
+Content-Type: application/json
+
+### Tạo category mới
+POST http://localhost:3001/categories
+Content-Type: application/json
+
+{
+  "name": "Coffee"
+}
