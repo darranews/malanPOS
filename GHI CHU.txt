@@ -1,0 +1,157 @@
+📝 Tổng hợp lại những gì đã làm
+1. Backend setup (NestJS + Prisma + Postgres)
+
+✅ Tạo project backend NestJS trong apps/backend.
+
+✅ Viết file nest-cli.json, tsconfig.json, tsconfig.build.json chuẩn NestJS.
+
+✅ Setup Prisma:
+
+Tạo schema prisma/schema.prisma.
+
+Định nghĩa model Category và Product (quan hệ 1-n).
+
+Chạy prisma migrate dev → DB sync ok.
+
+Viết seed.ts để seed dữ liệu mẫu (cà phê, trà, bánh ngọt…).
+
+Seed chạy thành công, DB có data.
+
+✅ Tạo folder structure src/prisma/prisma.service.ts.
+
+✅ Viết ProductsModule gồm:
+
+products.service.ts (CRUD).
+
+products.controller.ts (API endpoints /products).
+
+dto/create-product.dto.ts + update-product.dto.ts.
+
+✅ Sửa lại import dùng @/ alias để đồng bộ.
+
+✅ API test ok → trả JSON có products + category.
+
+2. Frontend setup (Next.js + Tailwind + shadcn/ui)
+
+✅ Setup Next.js app trong apps/frontend.
+
+✅ Import dữ liệu từ backend (http://localhost:3001/products).
+
+✅ Render list sản phẩm ra UI.
+
+❌ Gặp lỗi hydration error → fix bằng việc clean up HTML (<html lang="en">).
+
+✅ UI có categories + products hiển thị (theo screenshot mày gửi).
+
+3. Những vấn đề đã chỉnh sửa
+
+❌ Lúc đầu import prisma sai path (@/prisma/...) → đã fix.
+
+❌ Lúc đầu category trong DTO là string → sửa thành categoryId.
+
+❌ Lúc đầu seed bị lỗi → sửa lại schema + seed ok.
+
+✅ Backend chạy trên localhost:3001.
+
+✅ Frontend chạy trên localhost:3000.
+
+🚀 Next Steps cần làm
+
+Backend
+
+ Viết thêm CategoriesModule (controller, service, dto).
+
+ Thêm API /categories (list, create, update, delete).
+
+ Viết global exception filter + validation pipe chuẩn hơn.
+
+ Cấu hình CORS để frontend gọi API không lỗi.
+
+Frontend
+
+ Tạo CategoryList component → filter sản phẩm theo category.
+
+ Tạo Add Product modal (button “+ Add”).
+
+ Kết nối API POST /products → thêm sản phẩm.
+
+ Refetch sản phẩm sau khi thêm (dùng SWR hoặc React Query).
+
+ Tạo Category management page (quản lý danh mục).
+
+ Viết UI đẹp hơn với shadcn UI + Tailwind.
+
+DevOps
+
+ Viết docker-compose.yml cho cả frontend + backend + postgres.
+
+ Setup .env đồng bộ (DB_URL, API_URL).
+
+ Sau khi local ok → tính tới deploy (Render / Railway / Vercel).
+
+✅ Planning & Checklist (Step by Step)
+Phase 1: Backend (NestJS + Prisma + Postgres)
+
+ Setup NestJS project trong apps/backend.
+
+ Thêm config NestJS (nest-cli.json, tsconfig.*.json).
+
+ Cài Prisma (prisma, @prisma/client).
+
+ Viết prisma/schema.prisma (Category, Product).
+
+ Migrate DB → pnpm prisma migrate dev.
+
+ Seed DB (prisma/seed.ts).
+
+ Viết PrismaService (src/prisma/prisma.service.ts).
+
+ Viết ProductsModule (controller, service, dto).
+
+ Viết CategoriesModule (controller, service, dto).
+
+ Test API với Postman/Thunder → CRUD ok.
+
+ Enable ValidationPipe global.
+
+ Setup CORS (main.ts).
+
+Phase 2: Frontend (Next.js + Tailwind + shadcn UI)
+
+ Setup Next.js project trong apps/frontend.
+
+ Config Tailwind + shadcn.
+
+ Gọi API http://localhost:3001/products.
+
+ Render list sản phẩm ra UI.
+
+ Fix hydration error triệt để (HTML lang, date formatting).
+
+ Tạo CategoryList component (filter theo category).
+
+ Tạo ProductCard UI component.
+
+ Thêm nút “+ Add Product” → mở modal nhập thông tin.
+
+ Gọi API POST /products khi submit.
+
+ Dùng SWR/React Query để refetch products.
+
+ Tạo trang quản lý categories (/categories).
+
+Phase 3: DevOps & Deploy
+
+ Viết docker-compose.yml chạy 3 services: frontend, backend, postgres.
+
+ Config .env cho cả frontend + backend.
+
+ Build production (pnpm build) → test docker chạy được.
+
+ Deploy:
+
+Backend lên Railway/Render.
+
+Frontend lên Vercel.
+
+DB Postgres → Railway/Neon/Render.
