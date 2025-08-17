@@ -1,0 +1,19 @@
+datasource db {
+  provider = "postgresql" // hoặc "mysql" tuỳ DB
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Product {
+  id        String   @id @default(uuid())
+  name      String
+  price     Float
+  stock     Int      @default(0)
+  category  String
+  imageUrl  String?  // có thể null
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}

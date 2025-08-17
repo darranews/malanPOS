@@ -1,0 +1,110 @@
+@echo off
+title Create malanPOS Monorepo Structure
+echo ========================================
+echo Creating monorepo folders, files
+echo ========================================
+
+REM ===== Root folders =====
+mkdir malanPOS
+cd malanPOS
+mkdir apps
+mkdir packages
+
+REM ===== Frontend folders =====
+mkdir apps\frontend
+mkdir apps\frontend\public
+mkdir apps\frontend\src
+mkdir apps\frontend\src\app
+mkdir apps\frontend\src\app\pos
+mkdir apps\frontend\src\app\order
+mkdir apps\frontend\src\components
+mkdir apps\frontend\src\components\pos
+mkdir apps\frontend\src\components\shared
+mkdir apps\frontend\src\store
+mkdir apps\frontend\src\lib
+mkdir apps\frontend\src\styles
+mkdir apps\frontend\src\types
+
+REM ===== Backend folders =====
+mkdir apps\backend
+mkdir apps\backend\src
+mkdir apps\backend\src\modules
+mkdir apps\backend\src\modules\products\dto
+mkdir apps\backend\src\modules\orders
+mkdir apps\backend\src\modules\users
+mkdir apps\backend\src\modules\categories
+mkdir apps\backend\src\common
+mkdir apps\backend\src\database\prisma
+mkdir apps\backend\src\types
+
+REM ===== Shared packages folders =====
+mkdir packages\shared-types
+mkdir packages\shared-utils
+
+REM ===== pnpm-workspace.yaml =====
+echo packages:> pnpm-workspace.yaml
+echo   - 'apps/*'>> pnpm-workspace.yaml
+echo   - 'packages/*'>> pnpm-workspace.yaml
+
+REM ===== Frontend blank files =====
+type nul > apps\frontend\src\app\pos\page.tsx
+type nul > apps\frontend\src\app\order\page.tsx
+type nul > apps\frontend\src\app\layout.tsx
+type nul > apps\frontend\src\components\pos\CategoryTabs.tsx
+type nul > apps\frontend\src\components\pos\ProductCard.tsx
+type nul > apps\frontend\src\components\pos\OrderPanel.tsx
+type nul > apps\frontend\src\components\pos\OrderItemList.tsx
+type nul > apps\frontend\src\store\store.ts
+type nul > apps\frontend\src\store\productsApi.ts
+type nul > apps\frontend\src\store\cartSlice.ts
+type nul > apps\frontend\src\store\ordersSlice.ts
+
+REM ===== Backend blank files =====
+type nul > apps\backend\src\main.ts
+type nul > apps\backend\src\app.module.ts
+type nul > apps\backend\src\modules\products\products.controller.ts
+type nul > apps\backend\src\modules\products\products.service.ts
+type nul > apps\backend\src\modules\products\products.module.ts
+type nul > apps\backend\src\modules\orders\orders.controller.ts
+type nul > apps\backend\src\modules\orders\orders.service.ts
+type nul > apps\backend\src\modules\orders\orders.module.ts
+type nul > apps\backend\src\modules\users\users.controller.ts
+type nul > apps\backend\src\modules\users\users.service.ts
+type nul > apps\backend\src\modules\users\users.module.ts
+type nul > apps\backend\src\modules\categories\categories.controller.ts
+type nul > apps\backend\src\modules\categories\categories.service.ts
+type nul > apps\backend\src\modules\categories\categories.module.ts
+type nul > apps\backend\src\database\prisma\schema.prisma
+type nul > apps\backend\src\database\prisma\seed.ts
+
+REM ===== Shared packages blank files =====
+type nul > packages\shared-types\product.ts
+type nul > packages\shared-types\order.ts
+type nul > packages\shared-types\user.ts
+type nul > packages\shared-types\index.ts
+type nul > packages\shared-utils\currency.ts
+type nul > packages\shared-utils\date.ts
+type nul > packages\shared-utils\index.ts
+
+REM ===== Fixing empty package.json files =====
+	for /r %%F in (package.json) do (
+		for %%A in ("%%F") do (
+			set "filePath=%%~fA"
+			setlocal enabledelayedexpansion
+			set "size=%%~zA"
+			if !size! lss 5 (
+				echo 🛠 Fixing %%F ...
+				>"%%F" echo {^
+	  "name": "%%~nA",^
+	  "version": "1.0.0"^
+	}
+			)
+			endlocal
+		)
+	)
+
+
+echo ========================================
+echo All folders, files created!
+echo ========================================
+pause
