@@ -1,6 +1,6 @@
 // src/modules/products/products.service.ts
 import { Injectable, NotFoundException } from "@nestjs/common";
-import { PrismaService } from "@/prisma/prisma.service";
+import { PrismaService } from "@/common/prisma.service";
 import { CreateProductDto } from "@/modules/products/dto/create-product.dto";
 import { UpdateProductDto } from "@/modules/products/dto/update-product.dto";
 

@@ -1,0 +1,1 @@
+vậy mày tổng kết combo tools để làm cái project này cho tao nhé. Ngoài ra ta muốn mày: 1/ chi tiết hoá từng phiên bản, chia nhỏ các thành phần thành các task cụ thể. 2/ tư vấn kỹ thuật, chọn stack, cách chia component. 3/ khỏi cần ví dụ, cứ code full những thứ cần thiết cho component. 4/ luôn kiểm tra tiến độ, gợi ý tối ưu cho project.
