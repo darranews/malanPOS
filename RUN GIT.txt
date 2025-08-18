@@ -1,0 +1,8 @@
+*****************************************************************
+CHỈNH SỬA, CẬP NHẬT CODE TRÊN BRANCH MỚI:
+
+		#Nếu tiếp tục làm việc trên nhánh này, sau chỉ cần:		
+				git add .
+				git commit -m "mô tả ngắn"   #chỗ này thì ghi nội dung gì cũng được (nên ghi rõ nội dung chỉnh sửa)
+				git push
+*****************************************************************
